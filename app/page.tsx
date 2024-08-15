@@ -114,7 +114,6 @@ export default function Home() {
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
       />
-      <BackgroundBeams className="absolute w-full h-full z-30 dark:bg-[#000] bg-[#fff]" />
       <div className="absolute top-0 w-full h-full">
         <nav className="flex fixed w-full h-16 bg-gray-400/10 backdrop-blur-md z-50">
           <div className="flex space-x-4 h-auto relative top-6 left-4 justify-start w-full z-50">
