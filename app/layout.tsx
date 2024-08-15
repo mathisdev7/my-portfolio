@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="w-full h-full p-0 m-0 border-0 scroll-smooth">
+      <body
+        className="w-full h-full p-0 m-0 border-0 scroll-smooth"
+        suppressHydrationWarning
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

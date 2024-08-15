@@ -13,7 +13,6 @@ import { useEffect } from "react";
 import Typecript from "../public/typescript.png";
 
 export default function Home() {
-  let theme = localStorage.getItem("theme");
   const xp = [
     {
       id: 1,
