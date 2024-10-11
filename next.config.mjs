@@ -72,6 +72,11 @@ const nextConfig = {
         hostname: "images-ext-1.discordapp.net",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+        port: "",
+      },
     ],
   },
 };
