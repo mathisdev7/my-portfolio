@@ -9,8 +9,46 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [content, setContent] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function sendEmbed() {
+    setLoading(true);
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ firstName, lastName, email, content }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.message || "Erreur lors de l'envoi");
+      }
+    } catch (error: any) {
+      console.error("Erreur lors de l'envoi:", error.message);
+      setErrorMessage(error.message || "Erreur serveur");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    sendEmbed();
+  };
+
   return (
     <section
       id="contact"
@@ -30,15 +68,27 @@ export default function ContactSection() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid gap-4">
+          <form onSubmit={handleSubmit} className="grid gap-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="grid gap-2">
                 <Label htmlFor="first-name">First name</Label>
-                <Input id="first-name" placeholder="Max" required />
+                <Input
+                  id="first-name"
+                  placeholder="John"
+                  required
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="last-name">Last name</Label>
-                <Input id="last-name" placeholder="Robinson" required />
+                <Input
+                  id="last-name"
+                  placeholder="Doe"
+                  required
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
               </div>
             </div>
             <div className="grid gap-2">
@@ -46,8 +96,10 @@ export default function ContactSection() {
               <Input
                 id="email"
                 type="email"
-                placeholder="m@example.com"
+                placeholder="jd@example.com"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="grid gap-2">
@@ -56,12 +108,21 @@ export default function ContactSection() {
                 id="content"
                 placeholder="Write your message here..."
                 required
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
               />
             </div>
-            <Button type="submit" className="w-full dark:text-black text-white">
-              Submit
+            <Button
+              type="submit"
+              className="w-full dark:text-black text-white"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "Submit"}
             </Button>
-          </div>
+            {errorMessage && (
+              <p className="text-red-500 mt-2">{errorMessage}</p>
+            )}
+          </form>
         </CardContent>
       </Card>
     </section>
