@@ -36,6 +36,7 @@ export default function ContactSection() {
         const data = await response.json();
         throw new Error(data.message || "Erreur lors de l'envoi");
       }
+      alert("Message sent!");
     } catch (error: any) {
       console.error("Erreur lors de l'envoi:", error.message);
       setErrorMessage(error.message || "Erreur serveur");
