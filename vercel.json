@@ -1,0 +1,23 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"version": 2,
+	"alias": "mathis.dev",
+	"cleanUrls": true,
+	"public": true,
+	"regions": ["lhr1"],
+	"redirects": [
+		{ "source": "/cv", "destination": "https://read.cv/mathisdev7" },
+		{ "source": "/github", "destination": "https://github.com/mathisdev7" },
+		{
+			"source": "/linkedin",
+			"destination": "https://www.linkedin.com/in/mathis-zeghouani-11869a2a3"
+		},
+		{ "source": "/portfolio", "destination": "/projects" },
+		{ "source": "/resume", "destination": "https://read.cv/mathisdev7" },
+		{ "source": "/twitter", "destination": "https://twitter.com/mathisdev7" },
+		{
+			"source": "/contact",
+			"destination": "mailto:mathisdev7@gmail.com"
+		}
+	]
+}

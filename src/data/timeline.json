@@ -1,0 +1,70 @@
+[
+	{
+		"date": "10-19-2024",
+		"title": "Founded FrostSolutions",
+		"description": "Launched my business, FrostSolutions, specializing in custom web solutions.",
+		"icon": "feather:briefcase",
+		"link": {
+			"text": "Discover FrostSolutions",
+			"url": "https://frostsolutions.vercel.app/"
+		}
+	},
+	{
+		"date": "08-13-2024",
+		"title": "Improving my skills",
+		"description": "Continued to improve my skills in web development, including React, Next.js, and TypeScript.",
+		"icon": "feather:code"
+	},
+	{
+		"date": "08-12-2024",
+		"title": "Success at 42 School",
+		"description": "Received my results from the 42 School Piscine, achieving success.",
+		"icon": "feather:award"
+	},
+	{
+		"date": "08-09-2024",
+		"title": "Completed the 42 Piscine",
+		"description": "Successfully completed the intense coding Piscine, awaiting results.",
+		"icon": "feather:clock"
+	},
+	{
+		"date": "07-14-2024",
+		"title": "Started 42 School Piscine",
+		"description": "Began my journey at 42 School with the Piscine, an intense coding bootcamp.",
+		"icon": "feather:crosshair",
+		"link": {
+			"text": "Explore 42 School",
+			"url": "https://42.fr/"
+		}
+	},
+	{
+		"date": "07-08-2024",
+		"title": "High School Graduation",
+		"description": "Proudly graduated with my High School Diploma.",
+		"icon": "feather:award"
+	},
+	{
+		"date": "06-12-2023",
+		"title": "First Web Project",
+		"description": "Kicked off my first website project using Next.js, marking a milestone in my coding journey.",
+		"icon": "feather:code"
+	},
+	{
+		"date": "09-04-2021",
+		"title": "First Day of High School",
+		"description": "Started my high school journey, ready for new challenges.",
+		"icon": "feather:book"
+	},
+	{
+		"date": "08-25-2021",
+		"title": "First Coding Experience",
+		"description": "Wrote my first lines of code, sparking my passion for development.",
+		"icon": "feather:code"
+	},
+	{
+		"date": "08-05-2006",
+		"title": "Birthday!",
+		"description": "Born on the 5th of August 2006, beginning my story.",
+		"icon": "feather:gift"
+	}
+]
