@@ -31,7 +31,7 @@ const ACTIONS: Array<NavigationItem> = [
 	},
 	{
 		type: NavigationItemType.LINK,
-		href: 'mailto:mathisdev7@gmail.com',
+		href: '/contact',
 		icon: <Icon className="mr-3" icon="feather:edit-3" />,
 		text: 'Contact',
 	},
