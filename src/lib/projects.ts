@@ -41,8 +41,6 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 			if (repo.archived) return null;
 
-			console.log(repo.description);
-
 			return {
 				description: repo.description,
 				icon: ((): string => {

@@ -33,7 +33,7 @@ const skills: Array<Skill> = [
 	},
 	{
 		title: 'Next.js',
-		icon: <Icons.nextjs className="size-6 text-white" />,
+		icon: <Icons.nextjs className="size-6 dark:text-white" />,
 		level: 'Advanced',
 		description:
 			'Expert in building full-stack applications with server-side rendering and static site generation.',
@@ -47,7 +47,7 @@ const skills: Array<Skill> = [
 	},
 	{
 		title: 'Express.js',
-		icon: <Icons.expressjs className="size-6 text-white" />,
+		icon: <Icons.expressjs className="size-6 dark:text-white text-black" />,
 		level: 'Intermediate',
 		description:
 			'Experience with Express.js for building RESTful APIs and server-side rendering.',
