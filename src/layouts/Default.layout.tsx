@@ -2,6 +2,7 @@
 import { NextSeo } from 'next-seo';
 import dynamic from 'next/dynamic';
 
+import { Analytics } from "@vercel/analytics/react";
 import { Navbar } from '~/components';
 import { usePersistantState, useSeoProps } from '~/lib';
 
@@ -30,6 +31,7 @@ export function DefaultLayout({
 		<>
 			<NextSeo {...seo} />
 			<Navbar.Standard />
+			<Analytics />
 			<main className="flex flex-col justify-center px-8">
 				{showBackground && <Background />}
 				{children}
