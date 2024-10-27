@@ -5,6 +5,7 @@ export default function ContactPage(): JSX.Element {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
+	const [discord, setDiscord] = useState('');
 	const [submitted, setSubmitted] = useState(false);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
@@ -14,7 +15,7 @@ export default function ContactPage(): JSX.Element {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify({ name, email, message }),
+			body: JSON.stringify({ name, email, message, discord }),
 		});
 		if (!response.ok) {
 			setSubmitted(false);
@@ -35,7 +36,8 @@ export default function ContactPage(): JSX.Element {
 					</h1>
 					{submitted ? (
 						<p className="text-lg text-gray-500 dark:text-gray-300 text-center">
-							Thank you for your message!
+							Thank you for your message! I will get back to you as soon as possible
+							by email or Discord.
 						</p>
 					) : (
 						<form onSubmit={handleSubmit} className="flex flex-col space-y-4 z-50">
@@ -53,6 +55,14 @@ export default function ContactPage(): JSX.Element {
 								value={email}
 								onChange={(e): void => setEmail(e.target.value)}
 								required
+								className="px-4 py-2 border dark:text-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+							/>
+							<input
+								type="text"
+								placeholder="Your Discord Username (optional)"
+								value={discord}
+								onChange={(e): void => setDiscord(e.target.value)}
+								required={false}
 								className="px-4 py-2 border dark:text-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
 							/>
 							<textarea

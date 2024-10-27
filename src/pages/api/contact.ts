@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
 	if (req.method === 'POST') {
 		try {
-			const { name, email, message } = req.body; // Utilise req.body pour récupérer les données JSON
+			const { name, email, message, discord } = req.body; // Utilise req.body pour récupérer les données JSON
 
 			if (!name || !email || !message) {
 				return res.status(400).json({ message: 'Missing fields' });
@@ -17,6 +17,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 					{
 						name: 'Nom',
 						value: `${name}`,
+						inline: true,
+					},
+					{
+						name: 'Discord',
+						value: discord || 'Non renseigné',
 						inline: true,
 					},
 					{
