@@ -56,6 +56,9 @@ export default function HomePage(): JSX.Element {
 							opacity: [0, 1],
 							scale: [0.75, 1],
 						}}
+						transition={{
+							delay: 0.7,
+						}}
 						className="text-gray-500 dark:text-white text-5xl sm:text-6xl md:text-6xl lg:text-7xl tracking-tight font-extrabold">
 						Hey <span className="inline-block origin-70 hover:(animate-wave)">👋</span>{' '}
 						I&apos;m Mathis, <br className="hidden sm:block" />a{' '}
@@ -70,7 +73,7 @@ export default function HomePage(): JSX.Element {
 						}}
 						className="max-w-xs mt-4 md:mt-8 mx-auto text-base text-gray-400 sm:text-lg md:text-xl md:max-w-3xl"
 						transition={{
-							delay: 0.5,
+							delay: 1.5,
 						}}>
 						{description}
 					</Animate>
