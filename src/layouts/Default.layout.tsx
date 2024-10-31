@@ -1,10 +1,10 @@
-"use client";
+'use client';
 import { NextSeo } from 'next-seo';
 import dynamic from 'next/dynamic';
 
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from '~/components';
-import { usePersistantState, useSeoProps } from '~/lib';
+import { useSeoProps, useSettingsStore } from '~/lib';
 
 import type { WithChildren, WithProps } from '~/types';
 
@@ -22,8 +22,8 @@ export function DefaultLayout({
 	children,
 	seo: customSeo,
 }: DefaultLayoutProps): JSX.Element {
-	const { animations: background } = usePersistantState().get();
-	const showBackground = overrideBackground ?? background;
+	const { animations } = useSettingsStore();
+	const showBackground = overrideBackground ?? animations;
 
 	const seo = useSeoProps(customSeo);
 
