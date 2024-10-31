@@ -1,17 +1,16 @@
-import { Camera, Color, Geometry, Mesh, Program, Renderer } from 'ogl-typescript';
 import { log } from 'next-axiom';
-import { useEffectOnce } from 'react-use';
-import { useRef } from 'react';
+import { Camera, Color, Geometry, Mesh, Program, Renderer } from 'ogl-typescript';
+import { useEffect, useRef } from 'react';
 
 import { colors } from '~/lib';
-import VertexShader from './vertex.glsl';
 import FragmentShader from './fragment.glsl';
+import VertexShader from './vertex.glsl';
 
 export function Standard(): JSX.Element {
 	const containerRef = useRef<HTMLDivElement | null>(null);
 
-	useEffectOnce(() => {
-		let animationId = 1;
+	useEffect(() => {
+		let animationId: number;
 
 		const renderer = new Renderer({
 			depth: false,
@@ -26,21 +25,20 @@ export function Standard(): JSX.Element {
 		});
 		camera.position.z = 15;
 
-		function handleReisze(): void {
+		function handleResize(): void {
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			camera.perspective({
 				aspect: gl.canvas.width / gl.canvas.height,
 			});
 		}
 
-		try {
+		if (containerRef.current) {
 			containerRef.current.appendChild(gl.canvas);
 			gl.clearColor(0, 0, 0, 0);
-			window.addEventListener('resize', handleReisze, false);
-			handleReisze();
-		} catch (error) {
-			console.error(error);
-			log.error('Failed to initialize canvas', error);
+			window.addEventListener('resize', handleResize, false);
+			handleResize();
+		} else {
+			log.error('Container reference is null.');
 		}
 
 		const numParticles = 100;
@@ -97,8 +95,14 @@ export function Standard(): JSX.Element {
 		}
 		animationId = requestAnimationFrame(update);
 
-		return () => cancelAnimationFrame(animationId);
-	});
+		return () => {
+			cancelAnimationFrame(animationId);
+			if (containerRef.current) {
+				containerRef.current.removeChild(gl.canvas);
+			}
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	return <div className="fixed inset-0" ref={containerRef} />;
 }

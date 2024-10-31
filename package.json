@@ -6,6 +6,7 @@
 	"repository": "https://github.com/mathisdev7/my-portfolio",
 	"author": "mathisdev7",
 	"license": "MIT",
+	"type": "module",
 	"prettier": {
 		"arrowParens": "always",
 		"bracketSpacing": true,
@@ -43,7 +44,7 @@
 		"inter-ui": "^3.19.3",
 		"is-web-crawler": "^1.1.0",
 		"motion": "^10.7.2",
-		"next": "^12.3.4",
+		"next": "^15.0.2",
 		"next-axiom": "^0.13.0",
 		"next-mdx-remote": "^3.0.6",
 		"next-seo": "^4.28.1",
@@ -51,8 +52,8 @@
 		"nprogress": "^0.2.0",
 		"ogl-typescript": "^0.1.40",
 		"preact": "^10.10.0",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"react-hot-toast": "^2.1.1",
 		"react-use": "^17.3.1",
 		"react-use-lanyard": "^0.1.0",
@@ -63,7 +64,8 @@
 		"remark-slug": "^7.0.0",
 		"swr": "^1.0.1",
 		"use-sound": "^4.0.1",
-		"windicss": "^3.5.6"
+		"windicss": "^3.5.6",
+		"zustand": "^5.0.1"
 	},
 	"devDependencies": {
 		"@types/canvas-confetti": "^1.4.2",

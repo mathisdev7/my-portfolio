@@ -1,5 +1,5 @@
-const WindiCSS = require('windicss-webpack-plugin');
-const { withAxiom } = require('next-axiom');
+import { withAxiom } from 'next-axiom';
+import WindiCSS from 'windicss-webpack-plugin';
 
 const ContentSecurityPolicy = `
   child-src *.google.com streamable.com;
@@ -9,7 +9,7 @@ const ContentSecurityPolicy = `
   img-src * blob: data:;
   media-src 'none';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.splitbee.io;
-  style-src 'self' 'unsafe-inline' *.googleapis.com;
+  style-src 'self' 'unsafe-inline' *.googleapis.com;	
   worker-src 'self' 'unsafe-inline' blob:;
 `;
 
@@ -68,7 +68,6 @@ const config = {
 		];
 	},
 	reactStrictMode: true,
-	swcMinify: true,
 	webpack: (config, { dev, isServer }) => {
 		// TODO: Temp disabled as since upgrading `next` to v12.2.3 production builds fail & this seems to be the cause
 		// Replace React with Preact only in client production build
