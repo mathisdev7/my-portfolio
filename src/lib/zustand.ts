@@ -11,13 +11,13 @@ interface Settings {
 export const useSettingsStore = create<Settings>()(
 	persist(
 		(set) => ({
-			animations: null,
+			animations: true,
 			sound: true,
 			toggleSound: (): void => set((state) => ({ sound: !state.sound })),
 			toggleAnimations: (): void => set((state) => ({ animations: !state.animations })),
 		}),
 		{
-			name: 'settings-storage', // Nom du localStorage
+			name: 'settings-storage',
 		},
 	),
 );
