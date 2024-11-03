@@ -19,7 +19,7 @@ export function useSeoProps(
 			title,
 			description,
 			site_name: 'mathis',
-			url: `hhttps://mathisdev.pro/${router.asPath}`,
+			url: `https://mathisdev.pro/${router.asPath}`,
 			type: 'website',
 			images: [
 				{

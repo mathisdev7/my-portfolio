@@ -1,7 +1,7 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
 	"version": 2,
-	"alias": "mathis.dev",
+	"alias": "mathisdev.pro",
 	"cleanUrls": true,
 	"public": true,
 	"regions": ["lhr1"],
