@@ -17,6 +17,7 @@ export const getStaticProps: GetStaticProps<TimelineProps> = async () => {
 	const timeline = (rawTimeline as Array<TimelineEvent>).sort(
 		(a, b) => +new Date(b.date) - +new Date(a.date),
 	);
+	timeline.reverse();
 
 	return {
 		props: {

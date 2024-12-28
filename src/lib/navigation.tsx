@@ -65,14 +65,14 @@ export function useNavigation(): {
 				type: NavigationItemType.ACTION,
 				icon: 'feather:image',
 				endIcon: animations ? 'feather:check-circle' : 'feather:circle',
-				text: `Animations ${animations ? 'On' : 'Off'}`,
+				text: `Animations`,
 				onClick: toggleAnimations,
 			},
 			{
 				type: NavigationItemType.ACTION,
 				icon: sound ? 'feather:volume-2' : 'feather:volume-x',
 				endIcon: sound ? 'feather:check-circle' : 'feather:circle',
-				text: `Sounds ${sound ? 'On' : 'Off'}`,
+				text: `Sounds`,
 				onClick: toggleSound,
 			},
 			{

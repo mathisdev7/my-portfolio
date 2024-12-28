@@ -109,6 +109,7 @@ export interface Project {
 	description: string;
 	homepage?: string;
 	icon?: string;
+	image?: string;
 	language?: string;
 	name: string;
 	post?: string;

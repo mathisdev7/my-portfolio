@@ -29,7 +29,7 @@ const skills: Array<Skill> = [
 		icon: 'logos:c',
 		level: 'Intermediate',
 
-		description: 'Proficient in C, gained through an intensive 1-month Piscine at 42 School.',
+		description: 'Proficient in C, gained through an intensive 1-month Piscine at 42.',
 	},
 	{
 		title: 'Next.js',

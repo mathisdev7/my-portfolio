@@ -5,6 +5,7 @@ import { ListActionType } from '~/types';
 
 import type { GetStaticProps } from 'next';
 
+import Image from 'next/image';
 import type { ListAction, Project } from '~/types';
 
 interface ProjectProps {
@@ -69,6 +70,26 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 									description={project.description}
 									icon={<span className="text-xl">{project.icon}</span>}
 									title={project.name}
+									image={
+										<div className="relative w-full h-48 mb-4 overflow-hidden">
+											<Image
+												width={800}
+												height={400}
+												unoptimized
+												src={project.image}
+												alt={`${project.name} preview`}
+												className="w-full h-full object-contain bg-gray-100 dark:bg-gray-800"
+												style={{
+													objectFit: project.name.startsWith('42-')
+														? 'contain'
+														: 'cover',
+													backgroundColor: project.name.startsWith('42-')
+														? 'white'
+														: 'transparent',
+												}}
+											/>
+										</div>
+									}
 								/>
 							</Animate>
 						))}

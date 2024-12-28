@@ -1,5 +1,15 @@
 [
 	{
+		"date": "11-04-2024",
+		"title": "Began my journey at 42",
+		"description": "Started my journey at 42, an innovative peer-to-peer learning program for software development.",
+		"icon": "feather:book",
+		"link": {
+			"text": "Discover 42",
+			"url": "https://42.fr/"
+		}
+	},
+	{
 		"date": "10-19-2024",
 		"title": "Founded FrostSolutions",
 		"description": "Launched my business, FrostSolutions, specializing in custom web solutions.",
@@ -17,8 +27,8 @@
 	},
 	{
 		"date": "08-12-2024",
-		"title": "Success at 42 School",
-		"description": "Received my results from the 42 School Piscine, achieving success.",
+		"title": "Success at 42",
+		"description": "Received my results from the 42 Piscine, achieving success.",
 		"icon": "feather:award"
 	},
 	{
@@ -29,11 +39,11 @@
 	},
 	{
 		"date": "07-14-2024",
-		"title": "Started 42 School Piscine",
-		"description": "Began my journey at 42 School with the Piscine, an intense coding bootcamp.",
+		"title": "Started 42 Piscine",
+		"description": "Began my journey at 42 with the Piscine, an intense coding bootcamp.",
 		"icon": "feather:crosshair",
 		"link": {
-			"text": "Explore 42 School",
+			"text": "Explore 42",
 			"url": "https://42.fr/"
 		}
 	},

@@ -1,9 +1,9 @@
+import { Icon } from '@iconify/react';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { Icon } from '@iconify/react';
 
-import { Action } from './Action.component';
 import { ListActionType } from '~/types';
+import { Action } from './Action.component';
 
 import type { ReactNode } from 'react';
 
@@ -14,6 +14,7 @@ interface ItemProps extends WithChildren {
 	description?: string;
 	icon?: string | ReactNode;
 	iconColor?: string;
+	image?: ReactNode;
 	title: string;
 }
 
@@ -22,12 +23,15 @@ export function Item({
 	children,
 	description,
 	icon,
+	image,
 	iconColor,
 	title,
 }: ItemProps): JSX.Element {
 	return (
-		<li className="bg-gray-50 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-gray-100 dark:border-gray-500 rounded-lg transition ease-in-out duration-300">
-			<div className="flex flex-col sm:flex-row items-center justify-between px-4 py-4 sm:px-6">
+		<li className="flex flex-col bg-gray-50 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-gray-100 dark:border-gray-500 rounded-xl transition ease-in-out duration-300 overflow-hidden">
+			{image && <div className="w-full">{image}</div>}
+
+			<div className="flex flex-col sm:flex-row items-center justify-between px-4 pb-4 sm:px-6">
 				<div className="flex flex-1 items-center justify-start w-full">
 					{icon &&
 						(typeof icon === 'string' ? (

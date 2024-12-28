@@ -6,3 +6,15 @@ export * from './projects';
 export * from './state';
 export * from './theme';
 export * from './timeline';
+
+export interface Project {
+	description?: string;
+	icon?: string;
+	image?: string;
+	name: string;
+	homepage?: string;
+	url: string;
+	template: boolean;
+	updatedAt?: string;
+	post?: string;
+}

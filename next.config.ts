@@ -9,7 +9,7 @@ const ContentSecurityPolicy = `
   img-src * blob: data:;
   media-src 'none';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.splitbee.io;
-  style-src 'self' 'unsafe-inline' *.googleapis.com;	
+  style-src 'self' 'unsafe-inline' *.googleapis.com;
   worker-src 'self' 'unsafe-inline' blob:;
 `;
 
@@ -24,6 +24,12 @@ const config = {
 
 			// GitHub assets
 			'raw.githubusercontent.com',
+
+			// 42 assets
+			'42.fr',
+
+			// other assets
+			'i.pinimg.com',
 
 			// Spotify Album Art
 			'i.scdn.co',
