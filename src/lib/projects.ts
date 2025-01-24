@@ -48,7 +48,7 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 	// Then map and fetch images for valid repos
 	const projects: Array<Project> = await Promise.all(
 		validRepos.map(async (repo) => {
-			const projectImage = projectImages[repo.name] || null;
+			const projectImage = projectImages[repo.name].image || null;
 
 			return {
 				description: repo.description?.replace(/!\[.*?\]\(.*?\)/, '').trim(),
@@ -59,6 +59,7 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 				})(),
 				homepage: repo.homepage ?? undefined,
 				image: projectImage,
+				color: projectImages[repo.name].color ?? '#fff',
 				name: repo.name,
 				template: false,
 				url: repo.html_url.toLowerCase(),

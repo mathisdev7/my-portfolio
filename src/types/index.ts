@@ -13,6 +13,7 @@ export interface Project {
 	image?: string;
 	name: string;
 	homepage?: string;
+	color?: string;
 	url: string;
 	template: boolean;
 	updatedAt?: string;

@@ -78,14 +78,14 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 												unoptimized
 												src={project.image}
 												alt={`${project.name} preview`}
-												className="w-full h-full object-contain bg-gray-100 dark:bg-gray-800"
+												className={`w-full h-full object-contain bg-gray-100 dark:bg-gray-800`}
 												style={{
 													objectFit: project.name.startsWith('42-')
 														? 'contain'
 														: 'cover',
-													backgroundColor: project.name.startsWith('42-')
-														? 'white'
-														: 'transparent',
+													backgroundColor: project.color
+														? project.color
+														: 'white',
 												}}
 											/>
 										</div>

@@ -1,18 +1,64 @@
 {
-	"42-discovery-piscine": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-Minishell": "https://image.3001.net/images/20190325/1553474031_5c9821ef7ce72.png!small",
-	"42-fast-api": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-ft_printf": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-get_next_line": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-libft": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-Minitalk": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-Push_swap": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-	"42-So_long": "https://i.ibb.co/yyxNd4z/image.png",
-	"Amaru-Bot": "https://logo-marque.com/wp-content/uploads/2020/12/Discord-Symbole.jpg",
-	"auth-example": "https://firebase.google.com/static/images/products/auth/auth-3.png",
-	"ecom-elysia-api": "https://www.salesforce.com/fr/blog/wp-content/uploads/sites/15/2023/11/SF_Blog_Image_Ecommerce_Changing_Everything.png",
-	"frostsolutions": "https://www.gpoint.gr/wp-content/uploads/2019/09/g-point-adv.jpg",
-	"InvitesCounter-remake": "https://logo-marque.com/wp-content/uploads/2020/12/Discord-Symbole.jpg",
-	"M-Astral": "https://www.entrepreneur-facile.com/wp-content/uploads/2024/01/the-social-network-facebook-le-film.jpg",
-	"my-portfolio": "https://w7.pngwing.com/pngs/92/275/png-transparent-computer-icons-computer-programming-web-development-content-management-system-coding-miscellaneous-angle-text.png"
+	"42-discovery-piscine": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 discovery piscine"
+	},
+	"42-Minishell": {
+		"image": "https://i.ibb.co/gPtZ3MV/image.png",
+		"description": "42 minishell",
+		"color": "#1e1e1e"
+	},
+	"42-fast-api": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 fast api"
+	},
+	"42-ft_printf": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 ft_printf"
+	},
+	"42-get_next_line": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 get_next_line"
+	},
+	"42-libft": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 libft"
+	},
+	"42-Minitalk": {
+		"image": "https://i.ibb.co/tH3kybC/image.png",
+		"description": "42 minitalk",
+		"color": "#1e1e1e"
+	},
+	"42-Push_swap": {
+		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
+		"description": "42 push_swap"
+	},
+	"42-So_long": {
+		"image": "https://i.ibb.co/yyxNd4z/image.png",
+		"description": "42 so_long"
+	},
+	"Amaru-Bot": {
+		"image": "https://logo-marque.com/wp-content/uploads/2020/12/Discord-Symbole.jpg",
+		"description": "Amaru-Bot"
+	},
+	"auth-example": {
+		"image": "https://firebase.google.com/static/images/products/auth/auth-3.png",
+		"description": "auth-example"
+	},
+	"ecom-elysia-api": {
+		"image": "https://www.salesforce.com/fr/blog/wp-content/uploads/sites/15/2023/11/SF_Blog_Image_Ecommerce_Changing_Everything.png",
+		"description": "ecom-elysia-api"
+	},
+	"frostsolutions": {
+		"image": "https://www.gpoint.gr/wp-content/uploads/2019/09/g-point-adv.jpg",
+		"description": "frostsolutions"
+	},
+	"InvitesCounter-remake": {
+		"image": "https://logo-marque.com/wp-content/uploads/2020/12/Discord-Symbole.jpg",
+		"description": "InvitesCounter-remake"
+	},
+	"M-Astral": {
+		"image": "https://www.entrepreneur-facile.com/wp-content/uploads/2024/01/the-social-network-facebook-le-film.jpg",
+		"description": "M-Astral"
+	}
 }
