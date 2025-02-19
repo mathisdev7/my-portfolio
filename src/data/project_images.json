@@ -1,4 +1,17 @@
 {
+	"42-Philosophers": {
+	"image": "https://www.invaluable.com/blog/wp-content/uploads/sites/77/2018/12/shutterstock_753294010.jpg",
+		"description": "42 philosophers"
+	},
+	"42-Cub3D": {
+		"image": "https://i.ibb.co/xt2JFCJZ/image.png",
+		"description": "42 cub3d"
+	},
+	"42-Titles-Explorer": {
+		"image": "https://i.ibb.co/vxRfysWn/Capture.png",
+		"description": "42 titles explorer",
+		"color": "#100c0c"
+	},
 	"42-discovery-piscine": {
 		"image": "https://42.fr/wp-content/uploads/2021/08/42.jpg",
 		"description": "42 discovery piscine"

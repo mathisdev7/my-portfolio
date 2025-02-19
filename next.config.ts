@@ -40,6 +40,10 @@ const config = {
 			// Unsplash
 			'source.unsplash.com',
 			'images.unsplash.com',
+
+			// 42 project images
+			'i.ibb.co',
+			'www.invaluable.com',
 		],
 	},
 	// Inspired by: https://github.com/leerob/leerob.io/blob/main/next.config.js#L44-L81
