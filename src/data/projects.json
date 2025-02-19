@@ -1,1 +1,9 @@
-[]
+[
+	{
+		"name": "Techvox",
+		"description": "TechVox is an app for tech surveys, gathering user opinions on the latest tech trends.",
+		"image": "https://i.ibb.co/MydjrNsj/image.png",
+		"color": "#0A0A0A",
+		"link": "https://techvox.vercel.app/"
+	}
+]

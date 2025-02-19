@@ -3,7 +3,7 @@ import { log } from 'next-axiom';
 
 import type { GitHubRepos, Project } from '~/types';
 import projectImages from '../data/project_images.json';
-
+import projectsData from '../data/projects.json';
 /**
  * Fetch Projects
  *
@@ -36,7 +36,17 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 	const json = (await response.json()) as GitHubRepos;
 
-	// Filter out null projects first and sort by pushed_at
+	const localProjects: Array<Project> = Object.entries(projectsData).map(([_, data]) => ({
+		description: data.description,
+		image: data.image,
+		color: 'color' in data ? data.color : '#fff',
+		name: data.name,
+		template: false,
+		homepage: 'link' in data ? data.link : undefined,
+		url: `https://github.com/mathisdev7/${data.name}`.toLowerCase(),
+		updatedAt: new Date().toISOString(),
+	}));
+
 	const validRepos = json
 		.filter((repo) => repo.topics.includes('portfolio') && !repo.archived)
 		.sort((a, b) => {
@@ -45,21 +55,20 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 			return dateB - dateA;
 		});
 
-	// Then map and fetch images for valid repos
 	const projects: Array<Project> = await Promise.all(
 		validRepos.map(async (repo) => {
-			const projectImage = projectImages[repo.name].image || null;
+			const localProject = localProjects.find(p => p.name === repo.name);
 
 			return {
-				description: repo.description?.replace(/!\[.*?\]\(.*?\)/, '').trim(),
+				description: repo.description?.replace(/!\[.*?\]\(.*?\)/, '').trim() || localProject?.description,
 				icon: ((): string => {
 					if (!repo.description) return undefined;
 					const char = repo.description.split(' ')[0];
 					return emojiRegex().test(char) ? char : undefined;
 				})(),
 				homepage: repo.homepage ?? undefined,
-				image: projectImage,
-				color: projectImages[repo.name].color ?? '#fff',
+				image: localProject ? localProject.image : projectImages[repo.name].image,
+				color: localProject ? (localProject.color ?? projectImages[repo.name].color) : projectImages[repo.name].color,
 				name: repo.name,
 				template: false,
 				url: repo.html_url.toLowerCase(),
@@ -68,5 +77,8 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 		}),
 	);
 
-	return projects;
+	const githubRepoNames = projects.map(p => p.name);
+	const missingLocalProjects = localProjects.filter(p => !githubRepoNames.includes(p.name));
+
+	return [...projects, ...missingLocalProjects];
 }
