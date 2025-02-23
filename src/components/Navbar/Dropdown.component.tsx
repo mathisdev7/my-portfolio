@@ -12,13 +12,13 @@ import type { NavigationItems } from '~/types';
 
 type Position = 'top-left' | 'top-right';
 
-interface StandardProps extends WithChildren {
-	items: NavigationItems;
-	position: Position;
-}
-
 interface MenuLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	active: boolean;
+}
+
+interface StandardProps extends WithClassName, WithChildren {
+	items: NavigationItems;
+	position?: Position;
 }
 
 interface MenuButtonIconProps extends WithClassName {
@@ -93,74 +93,85 @@ export function Dropdown({ children, items, position = 'top-left' }: StandardPro
 						<Menu.Items
 							className={clsx(
 								'absolute w-[calc(100vw-1rem)] sm:w-56 mt-2 bg-gray-50 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 backdrop-filter backdrop-blur-sm border border-gray-100 dark:border-gray-500 rounded-md shadow-lg divide-y divide-gray-100 dark:divide-gray-500 focus:outline-none',
+								'max-h-[calc(100vh-6rem)] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-600 scrollbar-track-transparent',
 								position === 'top-left' && 'origin-top-left left-0',
 								position === 'top-right' && 'origin-top-right right-0',
 							)}>
 							{items.map((section, index) => (
 								<div className="py-2" key={index}>
-									{section.map((item, j) => (
-										<Menu.Item key={j}>
-											{({ active }): JSX.Element => {
-												switch (item.type) {
-													case NavigationItemType.ACTION:
-														return (
-															<StyledMenuItem
-																active={active}
-																className="group"
-																onClick={(): void =>
-																	item.onClick()
-																}>
-																<MenuButtonIcon icon={item.icon} />
-																{item.text}
-																{item.endIcon && (
-																	<>
+									{section.map((item, j) => {
+										if (item.type === NavigationItemType.CUSTOM) {
+											return (
+												<div key={j} onClick={(e) => e.stopPropagation()}>
+													{item.component}
+												</div>
+											);
+										}
+
+										return (
+											<Menu.Item key={j}>
+												{({ active }): JSX.Element => {
+													switch (item.type) {
+														case NavigationItemType.ACTION:
+															return (
+																<StyledMenuItem
+																	active={active}
+																	className="group"
+																	onClick={(): void =>
+																		item.onClick()
+																	}>
+																	<MenuButtonIcon icon={item.icon} />
+																	{item.text}
+																	{item.endIcon && (
+																		<>
+																			<span className="flex-1" />
+																			<MenuButtonIcon
+																				direction="right"
+																				icon={item.endIcon}
+																			/>
+																		</>
+																	)}
+																</StyledMenuItem>
+															);
+														case NavigationItemType.DIVIDER:
+															return (
+																<hr className="mt-2 pb-2 border-gray-100 dark:border-gray-500" />
+															);
+														case NavigationItemType.LINK:
+															const external = item.external ?? false;
+															if (external)
+																return (
+																	<StyledMenuItem
+																		className="group"
+																		active={active}
+																		href={item.href}
+																		rel="noopener noreferrer"
+																		target="_blank">
+																		<MenuButtonIcon
+																			icon={item.icon}
+																		/>
+																		{item.text}
 																		<span className="flex-1" />
 																		<MenuButtonIcon
 																			direction="right"
-																			icon={item.endIcon}
+																			icon="feather:external-link"
 																		/>
-																	</>
-																)}
-															</StyledMenuItem>
-														);
-													case NavigationItemType.DIVIDER:
-														return (
-															<hr className="mt-2 pb-2 border-gray-100 dark:border-gray-500" />
-														);
-													case NavigationItemType.LINK:
-														const external = item.external ?? false;
-														if (external)
-															return (
-																<StyledMenuItem
-																	className="group"
-																	active={active}
-																	href={item.href}
-																	rel="noopener noreferrer"
-																	target="_blank">
-																	<MenuButtonIcon
-																		icon={item.icon}
-																	/>
-																	{item.text}
-																	<span className="flex-1" />
-																	<MenuButtonIcon
-																		direction="right"
-																		icon="feather:external-link"
-																	/>
-																</StyledMenuItem>
-															);
+																	</StyledMenuItem>
+																);
 
-														return (
-															<MenuLink
-																active={active}
-																href={item.href}>
-																<MenuButtonIcon icon={item.icon} />
-																{item.text}
-															</MenuLink>
-														);
-												}
-											}}
-										</Menu.Item>
-									))}
+															return (
+																<MenuLink
+																	active={active}
+																	href={item.href}>
+																	<MenuButtonIcon icon={item.icon} />
+																	{item.text}
+																</MenuLink>
+															);
+													}
+												}}
+											</Menu.Item>
+										);
+									})}
 								</div>
 							))}
 						</Menu.Items>

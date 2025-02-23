@@ -52,7 +52,10 @@ export function Animate<T extends ElementType>({
 
 	return (
 		// @ts-expect-error Valid component
-		<Component ref={ref} {...rest}>
+		<Component
+			ref={ref}
+			style={{ opacity: (enabled && animations && !prefersReducedMotion && !isCrawlerUserAgent()) ? 0 : 1 }}
+			{...rest}>
 			{children}
 		</Component>
 	);

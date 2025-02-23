@@ -2,12 +2,15 @@ import { log } from 'next-axiom';
 import { Camera, Color, Geometry, Mesh, Program, Renderer } from 'ogl-typescript';
 import { useEffect, useRef } from 'react';
 
-import { colors } from '~/lib';
+import { colorThemes } from '~/lib';
+import { useSettingsStore } from '~/lib/zustand';
+import { ColorTheme } from '~/types';
 import FragmentShader from './fragment.glsl';
 import VertexShader from './vertex.glsl';
 
 export function Standard(): JSX.Element {
 	const containerRef = useRef<HTMLDivElement | null>(null);
+	const { colorTheme, customColor } = useSettingsStore();
 
 	useEffect(() => {
 		let animationId: number;
@@ -61,6 +64,13 @@ export function Standard(): JSX.Element {
 			},
 		});
 
+		const getCurrentColor = () => {
+			if (colorTheme === ColorTheme.CUSTOM) {
+				return customColor.hex;
+			}
+			return colorThemes[colorTheme.toLowerCase()][500];
+		};
+
 		const program = new Program(gl, {
 			vertex: VertexShader,
 			fragment: FragmentShader,
@@ -69,7 +79,7 @@ export function Standard(): JSX.Element {
 					value: 0,
 				},
 				uColor: {
-					value: new Color(colors.primary[500]),
+					value: new Color(getCurrentColor()),
 				},
 			},
 			transparent: true,
@@ -87,6 +97,7 @@ export function Standard(): JSX.Element {
 
 			particles.rotation.z += 0.0025;
 			program.uniforms.uTime.value = t * 0.00025;
+			program.uniforms.uColor.value = new Color(getCurrentColor());
 
 			renderer.render({
 				scene: particles,
@@ -102,7 +113,7 @@ export function Standard(): JSX.Element {
 			}
 			window.removeEventListener('resize', handleResize);
 		};
-	}, []);
+	}, [colorTheme, customColor]);
 
 	return <div className="fixed inset-0" ref={containerRef} />;
 }

@@ -1,7 +1,8 @@
 'use client';
 import { useTheme } from 'next-themes';
+import { ColorPicker } from '~/components/ColorPicker.component';
 import { useSettingsStore } from '~/lib/zustand';
-import { NavigationItemType, Theme } from '~/types';
+import { ColorTheme, NavigationItemType, Theme } from '~/types';
 
 import type { NavigationItem, NavigationItems } from '~/types';
 
@@ -55,7 +56,7 @@ export function useNavigation(): {
 	settings: NavigationItems;
 } {
 	const { theme, setTheme } = useTheme();
-	const { animations, sound, toggleAnimations, toggleSound } = useSettingsStore();
+	const { animations, sound, colorTheme, toggleAnimations, toggleSound, setColorTheme } = useSettingsStore();
 
 	const menuItems: NavigationItems = [...staticMenuItems];
 
@@ -98,6 +99,51 @@ export function useNavigation(): {
 				endIcon: theme === Theme.DARK ? 'feather:check-circle' : undefined,
 				text: 'Dark Theme',
 				onClick: () => setTheme(Theme.DARK),
+			},
+			{
+				type: NavigationItemType.DIVIDER,
+			},
+			{
+				type: NavigationItemType.ACTION,
+				icon: 'feather:circle',
+				text: 'Red Theme',
+				endIcon: colorTheme === ColorTheme.RED ? 'feather:check-circle' : undefined,
+				onClick: () => setColorTheme(ColorTheme.RED),
+			},
+			{
+				type: NavigationItemType.ACTION,
+				icon: 'feather:circle',
+				text: 'Blue Theme',
+				endIcon: colorTheme === ColorTheme.BLUE ? 'feather:check-circle' : undefined,
+				onClick: () => setColorTheme(ColorTheme.BLUE),
+			},
+			{
+				type: NavigationItemType.ACTION,
+				icon: 'feather:circle',
+				text: 'Green Theme',
+				endIcon: colorTheme === ColorTheme.GREEN ? 'feather:check-circle' : undefined,
+				onClick: () => setColorTheme(ColorTheme.GREEN),
+			},
+			{
+				type: NavigationItemType.ACTION,
+				icon: 'feather:circle',
+				text: 'Purple Theme',
+				endIcon: colorTheme === ColorTheme.PURPLE ? 'feather:check-circle' : undefined,
+				onClick: () => setColorTheme(ColorTheme.PURPLE),
+			},
+			{
+				type: NavigationItemType.DIVIDER,
+			},
+			{
+				type: NavigationItemType.CUSTOM,
+				component: (
+					<div className="px-4 py-3">
+						<div className="text-sm font-medium tracking-wide text-gray-500 dark:text-gray-400 mb-2">
+							Custom Color
+						</div>
+						<ColorPicker />
+					</div>
+				),
 			},
 		],
 	];
