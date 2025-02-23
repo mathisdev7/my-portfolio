@@ -9,7 +9,10 @@ export default defineConfig({
 		include: ['**/*.{jsx,tsx,css}'],
 		exclude: ['node_modules', '.git', '.next'],
 	},
-	plugins: [require('windicss/plugin/line-clamp'), require('windicss/plugin/typography')],
+	plugins: [
+		require('windicss/plugin/line-clamp'),
+		require('windicss/plugin/typography'),
+	],
 	shortcuts: {
 		'default-focus':
 			'focus:(outline-none ring-4 ring-offset-4 dark:ring-offset-gray-900 ring-primary-500)',
@@ -19,11 +22,26 @@ export default defineConfig({
 		extend: {
 			animation: {
 				wave: 'wave 2.25s ease-in-out infinite',
+				fadeIn: 'fadeIn 0.5s ease-in forwards',
 			},
 			backgroundOpacity: {
 				15: '0.15',
 			},
-			colors,
+			colors: {
+				...colors,
+				primary: {
+					50: 'var(--primary-50)',
+					100: 'var(--primary-100)',
+					200: 'var(--primary-200)',
+					300: 'var(--primary-300)',
+					400: 'var(--primary-400)',
+					500: 'var(--primary-500)',
+					600: 'var(--primary-600)',
+					700: 'var(--primary-700)',
+					800: 'var(--primary-800)',
+					900: 'var(--primary-900)',
+				}
+			},
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
 			},
@@ -37,6 +55,10 @@ export default defineConfig({
 					'50%': { transform: 'rotate(10deg)' },
 					'60%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(0deg)' },
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
 				},
 			},
 			saturate: {
