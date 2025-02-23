@@ -137,7 +137,7 @@ export function useNavigation(): {
 			{
 				type: NavigationItemType.CUSTOM,
 				component: (
-					<div className="px-4 py-3">
+					<div className="px-4 py-3 pb-10 md:pb-0">
 						<div className="text-sm font-medium tracking-wide text-gray-500 dark:text-gray-400 mb-2">
 							Custom Color
 						</div>
