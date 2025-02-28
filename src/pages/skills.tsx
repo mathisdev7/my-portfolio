@@ -15,21 +15,26 @@ const skills: Array<Skill> = [
 		icon: 'logos:javascript',
 		level: 'Advanced',
 		description:
-			'2 years of experience building web applications, Discord bots, and CLI apps using JavaScript and frameworks.',
+			'3 years of experience building web applications, Discord bots, and CLI apps using JavaScript and frameworks.',
 	},
 	{
 		title: 'TypeScript',
 		icon: 'logos:typescript-icon',
 		level: 'Intermediate',
 		description:
-			'7 months of experience writing scalable and type-safe code for various projects.',
+			'1 and a half years of experience writing scalable and type-safe code for various projects.',
 	},
 	{
 		title: 'C',
-		icon: 'logos:c',
+		icon: 'devicon:c',
+		level: 'Advanced',
+		description: "Advanced proficiency in C through extensive experience in 42's Common Core program.",
+	},
+	{
+		title: 'C++',
+		icon: 'devicon:cplusplus',
 		level: 'Intermediate',
-
-		description: 'Proficient in C, gained through an intensive 1-month Piscine at 42.',
+		description: 'C++ knowledge acquired during a CPP Piscine at 42.',
 	},
 	{
 		title: 'Next.js',
@@ -73,7 +78,7 @@ const skills: Array<Skill> = [
 	},
 	{
 		title: 'Git & GitHub',
-		icon: 'feather:git-branch',
+		icon: 'devicon:git',
 		level: 'Advanced',
 		description:
 			'Proficient in version control, managing branches, and collaborating on GitHub.',

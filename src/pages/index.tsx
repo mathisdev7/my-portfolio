@@ -31,6 +31,12 @@ const ACTIONS: Array<NavigationItem> = [
 	},
 	{
 		type: NavigationItemType.LINK,
+		href: '/skills',
+		icon: <Icon className="mr-3 text-black dark:text-white" icon="feather:code" />,
+		text: 'Skills',
+	},
+	{
+		type: NavigationItemType.LINK,
 		href: '/contact',
 		icon: <Icon className="mr-3 text-black dark:text-white" icon="feather:edit-3" />,
 		text: 'Contact',
