@@ -49,7 +49,7 @@ export default function HomePage(): JSX.Element {
 	const isBirthday =
 		today.getDate() === birthday.getDate() && today.getMonth() === birthday.getMonth();
 
-	const description = 'Web developer and 42 student in France.';
+	const description = 'Full-Stack web developer | React, Next.js, Go';
 
 	return (
 		<Layout.Default>
