@@ -15,14 +15,20 @@ const skills: Array<Skill> = [
 		icon: 'logos:javascript',
 		level: 'Advanced',
 		description:
-			'3 years of experience building web applications, Discord bots, and CLI apps using JavaScript and frameworks.',
+			'3 and a half years of experience building web applications, Discord bots, and CLI apps using JavaScript and frameworks.',
 	},
 	{
 		title: 'TypeScript',
 		icon: 'logos:typescript-icon',
 		level: 'Intermediate',
 		description:
-			'1 and a half years of experience writing scalable and type-safe code for various projects.',
+			'1 and a half year of experience writing scalable and type-safe code for various projects.',
+	},
+	{
+		"title": "Go",
+		"icon": "logos:go",
+		"level": "Beginner",
+		"description": "2 weeks of experience learning Go by building an API, exploring its concurrency model and standard library."
 	},
 	{
 		title: 'C',
