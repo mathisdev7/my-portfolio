@@ -86,6 +86,32 @@ export default function HomePage(): JSX.Element {
 						{description}
 					</Animate>
 
+					<Animate
+						animation={{
+							opacity: [0, 1],
+							y: [20, 0],
+						}}
+						transition={{
+							delay: 2,
+						}}
+						className="flex justify-center mt-6">
+						<a
+							href="https://github.com/mathisdev7"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 dark:from-gray-700 dark:to-gray-800 dark:hover:from-gray-600 dark:hover:to-gray-700 text-white text-sm font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md border border-gray-600 dark:border-gray-500">
+							<Icon
+								className="mr-2 text-lg group-hover:animate-pulse"
+								icon="feather:github"
+							/>
+							<span className="relative">
+								Follow me on GitHub
+								<span className="absolute inset-x-0 -bottom-1 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+							</span>
+							<div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						</a>
+					</Animate>
+
 					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-4 sm:space-y-0 w-full mt-8 sm:mt-4">
 						{ACTIONS.map((action, index) => {
 							if (action.type !== NavigationItemType.LINK) return null;
@@ -103,7 +129,9 @@ export default function HomePage(): JSX.Element {
 									}}>
 									<Button.Outline href={action.href}>
 										{action.icon}
-										<span className="dark:text-white text-black">{action.text}</span>
+										<span className="dark:text-white text-black">
+											{action.text}
+										</span>
 									</Button.Outline>
 								</Animate>
 							);
