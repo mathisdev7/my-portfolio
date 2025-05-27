@@ -1,8 +1,17 @@
 [
 	{
+		"description": "Social network & marketplace for music creators",
+		"name": "BeatsHub",
+		"color": "#800080",
+		"link": "https://beatshub.app",
+		"url": "",
+		"image": "https://i.ibb.co/TxDTjMqj/Screenshot-2025-05-27-at-12-22-16.png"
+	},
+	{
 		"name": "Techvox",
 		"description": "TechVox is an app for tech surveys, gathering user opinions on the latest tech trends.",
 		"image": "https://i.ibb.co/MydjrNsj/image.png",
+		"url": "https://github.com/mathisdev7/techvox",
 		"color": "#0A0A0A",
 		"link": "https://techvox.vercel.app/"
 	}

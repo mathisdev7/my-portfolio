@@ -60,12 +60,16 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 													} as ListAction,
 											  ]
 											: []),
-										{
-											type: ListActionType.LINK,
-											href: project.url,
-											icon: 'feather:github',
-											label: 'GitHub Repository',
-										},
+										...(project.url
+											? [
+													{
+														type: ListActionType.LINK,
+														href: project.url,
+														icon: 'feather:github',
+														label: 'GitHub Repository',
+													} as ListAction,
+											  ]
+											: []),
 									]}
 									description={project.description}
 									icon={<span className="text-xl">{project.icon}</span>}

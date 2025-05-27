@@ -43,7 +43,7 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 		name: data.name,
 		template: false,
 		homepage: 'link' in data ? data.link : undefined,
-		url: `https://github.com/mathisdev7/${data.name}`.toLowerCase(),
+		url: 'url' in data ? data.url : undefined,
 		updatedAt: new Date().toISOString(),
 	}));
 
@@ -57,10 +57,12 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 	const projects: Array<Project> = await Promise.all(
 		validRepos.map(async (repo) => {
-			const localProject = localProjects.find(p => p.name === repo.name);
+			const localProject = localProjects.find((p) => p.name === repo.name);
 
 			return {
-				description: repo.description?.replace(/!\[.*?\]\(.*?\)/, '').trim() || localProject?.description,
+				description:
+					repo.description?.replace(/!\[.*?\]\(.*?\)/, '').trim() ||
+					localProject?.description,
 				icon: ((): string => {
 					if (!repo.description) return undefined;
 					const char = repo.description.split(' ')[0];
@@ -68,7 +70,9 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 				})(),
 				homepage: repo.homepage ?? undefined,
 				image: localProject ? localProject.image : projectImages[repo.name].image,
-				color: localProject ? (localProject.color ?? projectImages[repo.name].color) : projectImages[repo.name].color,
+				color: localProject
+					? localProject.color ?? projectImages[repo.name].color
+					: projectImages[repo.name].color,
 				name: repo.name,
 				template: false,
 				url: repo.html_url.toLowerCase(),
@@ -77,8 +81,8 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 		}),
 	);
 
-	const githubRepoNames = projects.map(p => p.name);
-	const missingLocalProjects = localProjects.filter(p => !githubRepoNames.includes(p.name));
+	const githubRepoNames = projects.map((p) => p.name);
+	const missingLocalProjects = localProjects.filter((p) => !githubRepoNames.includes(p.name));
 
-	return [...projects, ...missingLocalProjects];
+	return [...missingLocalProjects, ...projects];
 }
