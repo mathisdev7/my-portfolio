@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -126,6 +127,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Analytics />
             <ClickSound />
             <div className="flex flex-col min-h-screen">
               <Header />
