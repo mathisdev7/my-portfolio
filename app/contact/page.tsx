@@ -28,7 +28,7 @@ export default function ContactPage() {
       } else {
         toast.error(result.error || t("contact.errorMessage"));
       }
-    } catch (error) {
+    } catch {
       toast.error(t("contact.errorMessage"));
     } finally {
       setIsSubmitting(false);
