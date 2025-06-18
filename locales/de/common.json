@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "startseite",
+    "about": "Über mich",
+    "projects": "projekte",
+    "contact": "kontakt"
+  },
+  "home": {
+    "title": "Willkommen zu Meinem Portfolio",
+    "subtitle": "Full Stack Entwickler",
+    "description": "Ich erstelle moderne Webanwendungen mit modernsten Technologien."
+  },
+  "about": {
+    "title": "Über Mich",
+    "description": "Leidenschaftlicher Entwickler mit Expertise in modernen Webtechnologien."
+  },
+  "projects": {
+    "title": "Neueste Projekte",
+    "allProjectsTitle": "Alle Projekte",
+    "allProjectsDescription": "Entdecken Sie alle meine Projekte, von modernen Webanwendungen bis zu 42-Schulprojekten.",
+    "viewProject": "Projekt Ansehen",
+    "sourceCode": "Quellcode",
+    "viewCode": "Code Ansehen",
+    "demo": "Live Demo",
+    "featured": "Hervorgehoben",
+    "viewMore": "Weitere Projekte Anzeigen",
+    "sendyb": {
+      "description": "Eine Web-App + Browser-Erweiterung mit einem virtuellen Warenkorb-System, in dem Sie alle Ihre Artikel von verschiedenen Websites gruppieren können. Zum Beispiel beim Bau eines PCs mit Komponenten von Amazon, TopAchat, Leboncoin usw. können Sie alles auf derselben Seite zusammenfassen und Ihren Warenkorb mit allen teilen. Verfolgen Sie, wie viele Personen Ihren Warenkorb angesehen haben, und erstellen Sie private Warenkörbe, die per Einladung geteilt werden können. Perfekt für YouTuber, die Produkte präsentieren und ihre Warenkörbe verfolgen möchten."
+    },
+    "beatshub": {
+      "description": "Beatshub ist ein moderner Musik-Marktplatz und eine Community, wo Beatmaker und Künstler Beats, Samples und Vocal Packs teilen, verkaufen und daran zusammenarbeiten können. Entwickelt mit React und Next.js, bietet es Echtzeit-Features, sichere Stripe-Zahlungen und ein Creator-first-Erlebnis ohne Plattformgebühren während des Launches."
+    },
+    "42-titles-explorer": {
+      "description": "Entdecken und lernen Sie, wie Sie Titel auf 42-Campus freischalten können. Entwickelt mit Next.js, Shadcn UI und Tailwind CSS."
+    },
+    "frost-js": {
+      "description": "Frost.js ist eine minimalistische React-ähnliche Bibliothek, die zum Erlernen von Frontend-Grundlagen wie dem Virtual DOM und Rendering entwickelt wurde."
+    },
+    "mastral": {
+      "description": "Eine fortschrittliche Social-Media-Plattform, entwickelt mit TypeScript, React, Prisma und Next.js mit moderner UI/UX und Echtzeit-Interaktionen."
+    },
+    "techvox": {
+      "description": "Eine technologieorientierte Plattform, entwickelt mit TypeScript, React und Next.js zum Teilen und Diskutieren der neuesten Tech-Trends."
+    },
+    "42-minishell": {
+      "description": "Ein Shell-Programm, das grundlegende Funktionen einer echten Shell nachahmt und Befehle, Pipes und Signale verarbeitet. Teamprojekt, das mir Zusammenarbeit, Entscheidungsfindung und Git-Workflows beigebracht hat."
+    },
+    "42-cub3d": {
+      "description": "Ein 3D-Spiel inspiriert von Wolfenstein 3D mit einer Raycasting-Engine zum Rendern einer 2D-Karte in 3D-Perspektive. Teamprojekt, das meine Teamwork- und Git-Kollaborationsfähigkeiten verbessert hat."
+    },
+    "ecom-elysia-api": {
+      "description": "Eine RESTful API, entwickelt mit Elysia.js zur Verwaltung von E-Commerce-Services, einschließlich Warenkorb-Management, Produkterstellung und Bestellungsverarbeitung."
+    },
+    "42-fast-api": {
+      "description": "Ein einfacher TypeScript-Client für die Interaktion mit der 42-API, der OAuth2-Token-Management und API-Anfragen mühelos verwaltet."
+    },
+    "deezer-extractor": {
+      "description": "Deezer-Quellenanbieter für Discord Player - eine TypeScript-Bibliothek für Musik-Streaming-Integration."
+    },
+    "auth-example": {
+      "description": "Eine Authentifizierungs-Beispielanwendung mit Node.js, Express und MongoDB mit Benutzerverwaltung, Anmeldung und rollenbasierter Zugriffskontrolle."
+    }
+  },
+  "contact": {
+    "title": "Kontakt Aufnehmen",
+    "description": "Haben Sie ein Projekt im Kopf oder möchten zusammenarbeiten? Ich würde gerne von Ihnen hören!",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "linkedin": "LinkedIn (optional)",
+    "message": "Nachricht",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "linkedinPlaceholder": "Geben Sie Ihre LinkedIn-Profil-URL ein",
+    "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt oder wie ich Ihnen helfen kann...",
+    "submit": "Nachricht Senden",
+    "sending": "Wird gesendet...",
+    "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich bald bei Ihnen melden.",
+    "errorMessage": "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt."
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen"
+  },
+  "hero": {
+    "name": "Mathis Zeghouani",
+    "description1": "Ich bin ein Full-Stack-Webentwickler, spezialisiert auf React, Next.js und TypeScript für das Frontend, mit Go/Node.js für die Backend-Entwicklung.",
+    "description2": "Ich programmiere seit Ende 2021 und habe im Dezember 2023 mit React und Next.js begonnen. Ich habe über 10 Projekte mit React/Next.js erstellt, darunter sendyb und beatshub.",
+    "description3": "Ich bin 18 Jahre alt und komme aus Frankreich (bei Toulouse). Meine Leidenschaften sind das Programmieren (ich liebe besonders React, Next.js, TypeScript und Backend mit Node.js/Go) und der Motorsport.",
+    "contact": "Ich bin derzeit offen für neue Möglichkeiten! Wenn Sie ein spannendes Projekt oder eine Stelle haben, die zu meiner Expertise passt, kontaktieren Sie mich gerne unter",
+    "socialChannels": "oder über meine sozialen Kanäle unten.",
+    "greeting": "Hallo, ich bin",
+    "role": "Full-Stack-Entwickler",
+    "contactButton": "Kontaktiere mich",
+    "description": "Ich bin ein 18-jähriger Entwickler aus Frankreich (bei Toulouse), der gerne Webanwendungen erstellt. Ich programmiere seit Ende 2021 und spezialisiere mich seit Dezember 2023 auf React/Next.js. Ich bin leidenschaftlich für React, Next.js, TypeScript, Node.js/Go Backend-Entwicklung und Motorsport."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "source": "Quellcode anzeigen"
+  }
+}

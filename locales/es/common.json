@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "inicio",
+    "about": "Acerca de",
+    "projects": "proyectos",
+    "contact": "contacto"
+  },
+  "home": {
+    "title": "Bienvenido a Mi Portfolio",
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Creo aplicaciones web modernas con tecnologías de vanguardia."
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "description": "Desarrollador apasionado con experiencia en tecnologías web modernas."
+  },
+  "projects": {
+    "title": "Últimos Proyectos",
+    "allProjectsTitle": "Todos los Proyectos",
+    "allProjectsDescription": "Descubre todos mis proyectos, desde aplicaciones web modernas hasta proyectos de la escuela 42.",
+    "viewProject": "Ver Proyecto",
+    "sourceCode": "Código Fuente",
+    "viewCode": "Ver Código",
+    "demo": "Demo en Vivo",
+    "featured": "Destacado",
+    "viewMore": "Ver Más Proyectos",
+    "sendyb": {
+      "description": "Una aplicación web + extensión de navegador con un sistema de carrito virtual donde puedes agrupar todos tus artículos de diferentes sitios web. Por ejemplo, al construir una PC con componentes de Amazon, TopAchat, Leboncoin, etc., puedes poner todo en el mismo sitio y compartir tu carrito con todos. Rastrea cuántas personas vieron tu carrito y crea carritos privados compartibles por invitación. Perfecto para YouTubers que presentan productos y quieren rastrear sus carritos."
+    },
+    "beatshub": {
+      "description": "Beatshub es un marketplace musical moderno y una comunidad donde beatmakers y artistas pueden compartir, vender y colaborar en beats, samples y vocal packs. Construido con React y Next.js, ofrece funciones en tiempo real, pagos seguros a través de Stripe y una experiencia enfocada en los creadores, sin comisiones de plataforma durante el lanzamiento."
+    },
+    "42-titles-explorer": {
+      "description": "Descubre y aprende cómo desbloquear títulos en los campus de 42. Construido con Next.js, Shadcn UI y Tailwind CSS."
+    },
+    "frost-js": {
+      "description": "Frost.js es una biblioteca minimalista similar a React creada para aprender fundamentos de frontend como el DOM virtual y renderizado."
+    },
+    "mastral": {
+      "description": "Una plataforma de redes sociales avanzada construida con TypeScript, React, Prisma y Next.js con UI/UX moderna e interacciones en tiempo real."
+    },
+    "techvox": {
+      "description": "Una plataforma enfocada en tecnología construida con TypeScript, React y Next.js para compartir y discutir las últimas tendencias tecnológicas."
+    },
+    "42-minishell": {
+      "description": "Un programa shell que imita las funcionalidades básicas de un shell real, manejando comandos, pipes y señales. Proyecto en equipo que me enseñó colaboración, toma de decisiones y flujos de trabajo con Git."
+    },
+    "42-cub3d": {
+      "description": "Un juego 3D inspirado en Wolfenstein 3D con un motor de raycasting para renderizar un mapa 2D en perspectiva 3D. Proyecto en equipo que mejoró mis habilidades de trabajo en equipo y colaboración con Git."
+    },
+    "ecom-elysia-api": {
+      "description": "Una API RESTful construida con Elysia.js para gestionar servicios de e-commerce, incluyendo gestión de carritos, creación de productos y procesamiento de pedidos."
+    },
+    "42-fast-api": {
+      "description": "Un cliente TypeScript simple para interactuar con la API de 42, manejando gestión de tokens OAuth2 y solicitudes API sin esfuerzo."
+    },
+    "deezer-extractor": {
+      "description": "Proveedor de fuente Deezer para Discord Player - una biblioteca TypeScript para integración de streaming musical."
+    },
+    "auth-example": {
+      "description": "Una aplicación de ejemplo de autenticación usando Node.js, Express y MongoDB, con gestión de usuarios, inicio de sesión y control de acceso basado en roles."
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "description": "¿Tienes un proyecto en mente o quieres colaborar? ¡Me encantaría saber de ti!",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Email",
+    "linkedin": "LinkedIn (opcional)",
+    "message": "Mensaje",
+    "firstNamePlaceholder": "Ingresa tu nombre",
+    "lastNamePlaceholder": "Ingresa tu apellido",
+    "emailPlaceholder": "Ingresa tu dirección de email",
+    "linkedinPlaceholder": "Ingresa la URL de tu perfil de LinkedIn",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto o cómo puedo ayudarte...",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "¡Gracias! Tu mensaje ha sido enviado exitosamente. Te responderé pronto.",
+    "errorMessage": "Lo siento, hubo un error al enviar tu mensaje. Por favor intenta de nuevo o contáctame directamente."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "retry": "Reintentar"
+  },
+  "hero": {
+    "name": "Mathis Zeghouani",
+    "description1": "Soy un desarrollador web full-stack especializado en React, Next.js y TypeScript para el frontend, con Go/Node.js para el desarrollo backend.",
+    "description2": "He estado programando desde finales de 2021 y comencé con React y Next.js en diciembre de 2023. He creado más de 10 proyectos con React/Next.js, incluyendo sendyb y beatshub.",
+    "description3": "Tengo 18 años y soy de Francia (cerca de Toulouse). Mis pasiones son la programación (me encantan especialmente React, Next.js, TypeScript y el backend con Node.js/Go) y el automovilismo.",
+    "contact": "¡Actualmente estoy abierto a nuevas oportunidades! Si tienes un proyecto o puesto emocionante que se alinee con mi experiencia, contáctame en",
+    "socialChannels": "o a través de mis redes sociales a continuación.",
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Full-Stack",
+    "description": "Soy un desarrollador de 18 años de Francia (cerca de Toulouse) que ama crear aplicaciones web. He estado programando desde finales de 2021 y me especializo en React/Next.js desde diciembre de 2023. Soy apasionado de React, Next.js, TypeScript, desarrollo backend Node.js/Go y deportes de motor.",
+    "contactButton": "Contáctame"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "source": "Ver código fuente"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "accueil",
+    "about": "À propos",
+    "projects": "projets",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Bienvenue sur Mon Portfolio",
+    "subtitle": "Développeur Full Stack",
+    "description": "Je crée des applications web modernes avec des technologies de pointe."
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Développeur passionné avec une expertise dans les technologies web modernes."
+  },
+  "projects": {
+    "title": "Derniers Projets",
+    "allProjectsTitle": "Tous les Projets",
+    "allProjectsDescription": "Découvrez tous mes projets, des applications web modernes aux projets d'école 42.",
+    "viewProject": "Voir le Projet",
+    "sourceCode": "Code Source",
+    "viewCode": "Voir le Code",
+    "demo": "Démo Live",
+    "featured": "En cours",
+    "viewMore": "Voir Plus de Projets",
+    "sendyb": {
+      "description": "Une application web + extension de navigateur avec un système de panier virtuel où vous pouvez regrouper tous vos articles de différents sites web. Par exemple, lors de la construction d'un PC avec des composants d'Amazon, TopAchat, Leboncoin, etc., vous pouvez tout mettre sur le même site et partager votre panier avec tout le monde. Suivez combien de personnes ont consulté votre panier et créez des paniers privés partageables par invitation. Parfait pour les YouTubers présentant des produits qui veulent suivre leurs paniers."
+    },
+    "beatshub": {
+      "description": "Beatshub est une marketplace musicale moderne et une communauté où beatmakers et artistes peuvent partager, vendre et collaborer sur des beats, samples et vocal packs. Construit avec React et Next.js, il offre des fonctionnalités en temps réel, des paiements sécurisés via Stripe, et une expérience pensée pour les créateurs, sans frais de plateforme pendant le lancement."
+    },
+    "42-titles-explorer": {
+      "description": "Découvrez et apprenez comment débloquer les titres sur les campus 42. Construit avec Next.js, Shadcn UI et Tailwind CSS."
+    },
+    "frost-js": {
+      "description": "Frost.js est une bibliothèque minimaliste similaire à React créée pour apprendre les fondamentaux du frontend comme le DOM virtuel et le rendu."
+    },
+    "mastral": {
+      "description": "Une plateforme de réseau social avancée construite avec TypeScript, React, Prisma et Next.js avec une UI/UX moderne et des interactions en temps réel."
+    },
+    "techvox": {
+      "description": "Une plateforme axée sur la technologie construite avec TypeScript, React et Next.js pour partager et discuter des dernières tendances tech."
+    },
+    "42-minishell": {
+      "description": "Un programme shell qui imite les fonctionnalités de base d'un vrai shell, gérant les commandes, pipes et signaux. Projet d'équipe qui m'a appris la collaboration, la prise de décision et les workflows Git."
+    },
+    "42-cub3d": {
+      "description": "Un jeu 3D inspiré de Wolfenstein 3D avec un moteur de raycasting pour rendre une carte 2D en perspective 3D. Projet d'équipe qui a renforcé mes compétences de travail en équipe et de collaboration Git."
+    },
+    "ecom-elysia-api": {
+      "description": "Une API RESTful construite avec Elysia.js pour gérer les services e-commerce, incluant la gestion du panier, la création de produits et le traitement des commandes."
+    },
+    "42-fast-api": {
+      "description": "Un client TypeScript simple pour interagir avec l'API 42, gérant la gestion des tokens OAuth2 et les requêtes API sans effort."
+    },
+    "deezer-extractor": {
+      "description": "Fournisseur de source Deezer pour Discord Player - une bibliothèque TypeScript pour l'intégration de streaming musical."
+    },
+    "auth-example": {
+      "description": "Une application d'exemple d'authentification utilisant Node.js, Express et MongoDB, avec gestion des utilisateurs, connexion et contrôle d'accès basé sur les rôles."
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Vous avez un projet en tête ou souhaitez collaborer ? J'aimerais beaucoup avoir de vos nouvelles !",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "linkedin": "LinkedIn (optionnel)",
+    "message": "Message",
+    "firstNamePlaceholder": "Entrez votre prénom",
+    "lastNamePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre adresse email",
+    "linkedinPlaceholder": "Entrez l'URL de votre profil LinkedIn",
+    "messagePlaceholder": "Parlez-moi de votre projet ou comment je peux vous aider...",
+    "submit": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "successMessage": "Merci ! Votre message a été envoyé avec succès. Je vous répondrai bientôt.",
+    "errorMessage": "Désolé, il y a eu une erreur lors de l'envoi de votre message. Veuillez réessayer ou me contacter directement."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer"
+  },
+  "hero": {
+    "name": "Mathis Zeghouani",
+    "description1": "Je suis un développeur web full-stack spécialisé en React, Next.js et TypeScript pour le frontend, avec Go/Node.js pour le développement backend.",
+    "description2": "Je code depuis fin 2021 et j'ai commencé React et Next.js en décembre 2023. J'ai créé plus de 10 projets avec React/Next.js, notamment sendyb et beatshub.",
+    "description3": "J'ai 18 ans et je viens de France (près de Toulouse). Mes passions sont le code (j'adore particulièrement React, Next.js, TypeScript et le backend avec Node.js/Go) et le sport automobile.",
+    "contact": "Je suis actuellement ouvert à de nouvelles opportunités ! Si vous avez un projet ou un poste passionnant qui correspond à mon expertise, n'hésitez pas à me contacter à",
+    "socialChannels": "ou via mes réseaux sociaux ci-dessous.",
+    "greeting": "Salut, je suis",
+    "role": "Développeur Full-Stack",
+    "contactButton": "Contactez-moi",
+    "description": "Je suis un développeur de 18 ans de France (près de Toulouse) qui aime créer des applications web. Je code depuis fin 2021 et me spécialise en React/Next.js depuis décembre 2023. Je suis passionné par React, Next.js, TypeScript, le développement backend Node.js/Go, et les sports mécaniques."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "source": "Voir le code source"
+  }
+}

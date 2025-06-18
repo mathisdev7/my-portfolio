@@ -1,0 +1,104 @@
+{
+  "navigation": {
+    "home": "home",
+    "about": "About",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "Full Stack Developer",
+    "description": "I create modern web applications with cutting-edge technologies."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate developer with expertise in modern web technologies."
+  },
+  "projects": {
+    "title": "Latest Projects",
+    "allProjectsTitle": "All Projects",
+    "allProjectsDescription": "Discover all my projects, from modern web applications to 42 school projects.",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code",
+    "viewCode": "View Code",
+    "demo": "Live Demo",
+    "featured": "Featured",
+    "viewMore": "View More Projects",
+    "viewGithub": "View GitHub",
+    "sendyb": {
+      "description": "A web app + browser extension featuring a virtual cart system where you can group all your items from different websites. For example, when building a PC with components from Amazon, TopAchat, Leboncoin, etc., you can put everything on the same site and share your cart with everyone. Track how many people viewed your cart and create private carts shareable by invitation. Perfect for YouTubers presenting products who want to track their carts."
+    },
+    "beatshub": {
+      "description": "Beatshub is a modern music marketplace and community where beatmakers and artists can share, sell, and collaborate on beats, samples, and vocal packs. Built with React and Next.js, it offers real-time features, secure Stripe payments, and a creator-first experience with zero platform fees during launch."
+    },
+    "42-titles-explorer": {
+      "description": "Discover and learn how to unlock titles across 42 campuses. Built with Next.js, Shadcn UI, and Tailwind CSS."
+    },
+    "frost-js": {
+      "description": "Frost.js is a minimal React-like library made for learning frontend fundamentals like the Virtual DOM and rendering."
+    },
+    "mastral": {
+      "description": "An advanced social media platform built with TypeScript, React, Prisma, and Next.js featuring modern UI/UX and real-time interactions."
+    },
+    "techvox": {
+      "description": "A technology-focused platform built with TypeScript, React, and Next.js for sharing and discussing the latest tech trends."
+    },
+    "42-minishell": {
+      "description": "A shell program that mimics basic functionalities of a real shell, handling commands, pipes, and signals. Team project that taught me collaboration, decision-making, and Git workflows."
+    },
+    "42-cub3d": {
+      "description": "A 3D game inspired by Wolfenstein 3D featuring a raycasting engine for rendering a 2D map in 3D perspective. Team project that enhanced my teamwork and Git collaboration skills."
+    },
+    "ecom-elysia-api": {
+      "description": "A RESTful API built with Elysia.js to manage e-commerce services, including cart management, product creation, and order processing."
+    },
+    "42-fast-api": {
+      "description": "A simple TypeScript client for interacting with the 42 API, handling OAuth2 token management and API requests effortlessly."
+    },
+    "deezer-extractor": {
+      "description": "Deezer source provider for Discord Player - a TypeScript library for music streaming integration."
+    },
+    "auth-example": {
+      "description": "An authentication example app using Node.js, Express, and MongoDB, featuring user management, login, and role-based access control."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind or want to collaborate? I'd love to hear from you!",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "linkedin": "LinkedIn (optional)",
+    "message": "Message",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNamePlaceholder": "Enter your last name",
+    "emailPlaceholder": "Enter your email address",
+    "linkedinPlaceholder": "Enter your LinkedIn profile URL",
+    "messagePlaceholder": "Tell me about your project or how I can help you...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+    "errorMessage": "Sorry, there was an error sending your message. Please try again or contact me directly."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry"
+  },
+  "hero": {
+    "name": "Mathis Zeghouani",
+    "description1": "I'm a full-stack web developer specializing in React, Next.js, and TypeScript for frontend, with Go/Node.js for backend development.",
+    "description2": "I've been coding since late 2021 and started with React and Next.js in December 2023. I've built over 10 projects with React/Next.js, including sendyb and beatshub.",
+    "description3": "I'm 18 years old from France (near Toulouse). My passions are coding (I particularly love React, Next.js, TypeScript, and backend with Node.js/Go) and motorsports.",
+    "contact": "I'm currently open to new opportunities! If you have an exciting project or role that aligns with my expertise, please reach out at",
+    "socialChannels": "or through any of my social channels below.",
+    "greeting": "Hello, I'm",
+    "role": "Full-Stack Developer",
+    "description": "I'm an 18-year-old developer from France (near Toulouse) who loves building web applications. I've been coding since late 2021 and specializing in React/Next.js since December 2023. I'm passionate about React, Next.js, TypeScript, Node.js/Go backend development, and motorsports.",
+    "contactButton": "Contact me"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "source": "View source code"
+  }
+}
