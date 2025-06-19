@@ -56,7 +56,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex space-x-4 mb-2 mt-4">
-        <div className="text-primary hover:text-foreground transition-colors flex filter brightness-125">
+        <div className="text-primary hover:text-foreground transition-colors flex filter brightness-1">
           <Link
             target="_blank"
             className="group flex text-sm font-medium transition"
