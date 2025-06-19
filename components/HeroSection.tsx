@@ -56,7 +56,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex space-x-4 mb-2 mt-4">
-        <div className="text-primary hover:text-foreground transition-colors flex filter brightness-1">
+        <div className="text-primary hover:text-foreground transition-colors flex filter brightness-125">
           <Link
             target="_blank"
             className="group flex text-sm font-medium transition"
@@ -64,18 +64,18 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <IconBrandGithub />
+            <IconBrandGithub className="text-primary group-hover:text-foreground transition-colors" />
           </Link>
         </div>
         <div className="text-primary hover:text-foreground transition-colors flex filter brightness-125">
           <Link
             target="_blank"
-            className="group flex text-sm font-medium transition"
+            className="text-primary group flex text-sm font-medium transition"
             href="https://x.com/frostwrld7"
             rel="noopener noreferrer"
             aria-label="X"
           >
-            <IconBrandX />
+            <IconBrandX className="text-primary" />
           </Link>
         </div>
         <div className="text-primary hover:text-foreground transition-colors flex filter brightness-125">
