@@ -36,16 +36,15 @@ export default function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 transition-colors"
+                aria-label="External Link"
               >
                 <IconExternalLink size={20} />
               </Link>
             </div>
-            <p className="text-muted-foreground mb-4">
-              {t(project.description)}
-            </p>
+            <p className="text-secondary mb-4">{t(project.description)}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech, techIndex) => (
-                <Badge key={techIndex} variant="secondary">
+                <Badge key={techIndex} variant="outline">
                   {tech}
                 </Badge>
               ))}
@@ -56,7 +55,7 @@ export default function ProjectsSection() {
       <div className="flex justify-center pt-6">
         <Link
           href="/projects"
-          className="inline-flex items-center px-6 py-3 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background transition-colors"
+          className="inline-flex items-center px-6 py-3 text-sm font-medium bg-primary text-black rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background transition-colors"
         >
           {t("projects.viewMore")}
           <IconExternalLink size={16} className="ml-2" />

@@ -39,7 +39,7 @@ export default function ThemeSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm">
+        <Button variant="outline" size="sm" aria-label="Theme Switcher">
           <CurrentIcon className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>

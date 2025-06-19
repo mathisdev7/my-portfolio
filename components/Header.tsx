@@ -1,10 +1,28 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const t = useTranslations();
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return (
+        pathname === "/" ||
+        pathname === "/en" ||
+        pathname === "/fr" ||
+        pathname === "/de" ||
+        pathname === "/es" ||
+        pathname === "/it"
+      );
+    }
+    return pathname.includes(path);
+  };
 
   return (
     <header className="tracking-tight mt-2 w-full max-w-4xl mx-auto">
@@ -16,13 +34,21 @@ export default function Header() {
           <div className="flex w-full flex-row justify-between items-center py-5">
             <div className="flex flex-row justify-between gap-4">
               <Link
-                className="flex align-middle transition-all hover:text-foreground hover:underline hover:cursor-pointer"
+                className={`flex align-middle transition-all hover:text-primary hover:underline hover:cursor-pointer ${
+                  isActive("/")
+                    ? "text-primary font-bold"
+                    : "text-secondary hover:text-foreground"
+                }`}
                 href="/"
               >
                 <span className="relative py-1">{t("navigation.home")}</span>
               </Link>
               <Link
-                className="flex align-middle transition-all hover:text-foreground text-muted-foreground hover:underline hover:cursor-pointer"
+                className={`flex align-middle transition-all hover:text-primary hover:underline hover:cursor-pointer ${
+                  isActive("/projects")
+                    ? "text-primary font-bold"
+                    : "text-secondary hover:text-foreground"
+                }`}
                 href="/projects"
               >
                 <span className="relative py-1">
@@ -30,7 +56,11 @@ export default function Header() {
                 </span>
               </Link>
               <Link
-                className="flex align-middle transition-all hover:text-foreground text-muted-foreground hover:underline hover:cursor-pointer"
+                className={`flex align-middle transition-all hover:text-primary hover:underline hover:cursor-pointer ${
+                  isActive("/contact")
+                    ? "text-primary font-bold"
+                    : "text-secondary hover:text-foreground"
+                }`}
                 href="/contact"
               >
                 <span className="relative py-1">{t("navigation.contact")}</span>

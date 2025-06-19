@@ -50,7 +50,7 @@ export default function ProjectsPage() {
           <h1 className="text-3xl font-bold mb-4">
             {t("projects.allProjectsTitle")}
           </h1>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-secondary text-lg">
             {t("projects.allProjectsDescription")}
           </p>
         </div>
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                   )}
                 </div>
 
-                <p className="text-muted-foreground mb-4 flex-1">
+                <p className="text-secondary mb-4 flex-1">
                   {t(project.description)}
                 </p>
 
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
                   {project.technologies.map((tech, techIndex) => (
                     <Badge
                       key={techIndex}
-                      variant="secondary"
+                      variant="outline"
                       className="text-xs"
                     >
                       {tech}

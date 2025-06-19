@@ -86,15 +86,16 @@
   },
   "hero": {
     "name": "Mathis Zeghouani",
-    "description1": "Sono uno sviluppatore web full-stack specializzato in React, Next.js e TypeScript per il frontend, con Go/Node.js per lo sviluppo backend.",
-    "description2": "Programmo dalla fine del 2021 e ho iniziato con React e Next.js nel dicembre 2023. Ho creato oltre 10 progetti con React/Next.js, inclusi sendyb e beatshub.",
-    "description3": "Ho 18 anni e vengo dalla Francia (vicino a Tolosa). Le mie passioni sono la programmazione (amo particolarmente React, Next.js, TypeScript e il backend con Node.js/Go) e il motorsport.",
-    "contact": "Sono attualmente aperto a nuove opportunità! Se hai un progetto o un ruolo entusiasmante che si allinea con la mia esperienza, contattami a",
-    "socialChannels": "o attraverso i miei canali social qui sotto.",
+    "description1": "Sviluppatore full-stack appassionato di React, Next.js, TypeScript e Go.",
+    "description2": "18 anni dalla Francia, programmo dal 2021. Studente alla 42. Amo creare applicazioni web moderne.",
+    "description3": "Attualmente aperto a nuove opportunità!",
+    "contact": "Contattami a",
+    "socialChannels": "o attraverso i miei social.",
     "greeting": "Ciao, sono",
     "role": "Sviluppatore Full-Stack",
-    "description": "Sono uno sviluppatore di 18 anni dalla Francia (vicino a Tolosa) che ama creare applicazioni web. Programmo dalla fine del 2021 e mi specializzo in React/Next.js da dicembre 2023. Sono appassionato di React, Next.js, TypeScript, sviluppo backend Node.js/Go e motorsport.",
-    "contactButton": "Contattami"
+    "description": "Sono uno sviluppatore di 18 anni dalla Francia che ama creare applicazioni web moderne con tecnologie all'avanguardia.",
+    "contactButton": "Contattami",
+    "techStack": "Stack Tecnologico"
   },
   "footer": {
     "rights": "Tutti i diritti riservati.",

@@ -10,6 +10,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mathisdev.pro"),
   title: {
     default:
       "Mathis Zeghouani - Full Stack Developer | React, Next.js, TypeScript Expert",
@@ -115,7 +116,6 @@ export default async function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
