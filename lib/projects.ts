@@ -1,7 +1,9 @@
 export interface Project {
   id: number;
   name: string;
+  slug: string;
   description: string;
+  adventure: string;
   image: string;
   technologies: string[];
   link: string;
@@ -13,7 +15,9 @@ export const projects: Project[] = [
   {
     id: 1,
     name: "Sendyb",
+    slug: "sendyb",
     description: "projects.sendyb.description",
+    adventure: "projects.sendyb.adventure",
     image: "https://i.postimg.cc/2SMsjPLy/image.png",
     technologies: [
       "React",
@@ -31,7 +35,9 @@ export const projects: Project[] = [
   {
     id: 2,
     name: "Beatshub",
+    slug: "beatshub",
     description: "projects.beatshub.description",
+    adventure: "projects.beatshub.adventure",
     image: "https://pbs.twimg.com/media/Gpt_X4LXIAAt6ik?format=jpg&name=large",
     technologies: [
       "React",
@@ -40,7 +46,7 @@ export const projects: Project[] = [
       "Prisma",
       "PostgreSQL",
       "Stripe",
-      "Bunny CDN",
+      "Bunny.net",
       "DevOps",
       "Cloud",
     ],
@@ -51,7 +57,9 @@ export const projects: Project[] = [
   {
     id: 3,
     name: "42-Titles-Explorer",
+    slug: "42-titles-explorer",
     description: "projects.42-titles-explorer.description",
+    adventure: "projects.42-titles-explorer.adventure",
     image: "https://i.ibb.co/vxRfysWn/Capture.png",
     technologies: [
       "Next.js",
@@ -67,7 +75,9 @@ export const projects: Project[] = [
   {
     id: 4,
     name: "frost.js",
+    slug: "frost-js",
     description: "projects.frost-js.description",
+    adventure: "projects.frost-js.adventure",
     image:
       "https://images.squarespace-cdn.com/content/v1/638f10c47f505a72c6c86073/742d280c-683c-41b0-ac08-c70ee193dbe9/reactJS.jpg",
     technologies: ["TypeScript", "React", "Virtual DOM", "Library"],
@@ -78,7 +88,9 @@ export const projects: Project[] = [
   {
     id: 5,
     name: "M'Astral",
+    slug: "mastral",
     description: "projects.mastral.description",
+    adventure: "projects.mastral.adventure",
     image:
       "https://www.entrepreneur-facile.com/wp-content/uploads/2024/01/the-social-network-facebook-le-film.jpg",
     technologies: ["TypeScript", "React", "Next.js", "Prisma"],
@@ -89,7 +101,9 @@ export const projects: Project[] = [
   {
     id: 6,
     name: "Techvox",
+    slug: "techvox",
     description: "projects.techvox.description",
+    adventure: "projects.techvox.adventure",
     image: "https://i.ibb.co/MydjrNsj/image.png",
     technologies: ["TypeScript", "React", "Next.js", "Web App"],
     link: "https://github.com/mathisdev7/techvox",
@@ -99,7 +113,9 @@ export const projects: Project[] = [
   {
     id: 7,
     name: "42-Minishell",
+    slug: "42-minishell",
     description: "projects.42-minishell.description",
+    adventure: "projects.42-minishell.adventure",
     image: "https://i.ibb.co/gPtZ3MV/image.png",
     technologies: ["C", "Unix", "Shell", "Team Project"],
     link: "https://github.com/mathisdev7/42-Minishell",
@@ -109,7 +125,9 @@ export const projects: Project[] = [
   {
     id: 8,
     name: "42-Cub3D",
+    slug: "42-cub3d",
     description: "projects.42-cub3d.description",
+    adventure: "projects.42-cub3d.adventure",
     image: "https://i.ibb.co/xt2JFCJZ/image.png",
     technologies: ["C", "Raycasting", "Graphics", "Team Project", "Parsing"],
     link: "https://github.com/mathisdev7/42-Cub3D",
@@ -119,7 +137,9 @@ export const projects: Project[] = [
   {
     id: 9,
     name: "ecom-elysia-api",
+    slug: "ecom-elysia-api",
     description: "projects.ecom-elysia-api.description",
+    adventure: "projects.ecom-elysia-api.adventure",
     image:
       "https://www.salesforce.com/fr/blog/wp-content/uploads/sites/15/2023/11/SF_Blog_Image_Ecommerce_Changing_Everything.png",
     technologies: ["TypeScript", "Elysia.js", "REST API", "E-commerce"],
@@ -130,7 +150,9 @@ export const projects: Project[] = [
   {
     id: 10,
     name: "42-fast-api",
+    slug: "42-fast-api",
     description: "projects.42-fast-api.description",
+    adventure: "projects.42-fast-api.adventure",
     image: "https://42.fr/wp-content/uploads/2021/08/42.jpg",
     technologies: ["TypeScript", "OAuth2", "API Client", "42 School"],
     link: "https://github.com/mathisdev7/42-fast-api",
@@ -140,7 +162,9 @@ export const projects: Project[] = [
   {
     id: 11,
     name: "deezer-extractor",
+    slug: "deezer-extractor",
     description: "projects.deezer-extractor.description",
+    adventure: "projects.deezer-extractor.adventure",
     image:
       "https://i0.wp.com/argraphic.fr/wp-content/uploads/2023/11/nouveau-logo-deezer.jpg?fit=2048%2C1152&ssl=1",
     technologies: ["TypeScript", "Discord", "Music", "Library", "Node.js"],
@@ -151,7 +175,9 @@ export const projects: Project[] = [
   {
     id: 12,
     name: "auth-example",
+    slug: "auth-example",
     description: "projects.auth-example.description",
+    adventure: "projects.auth-example.adventure",
     image: "https://firebase.google.com/static/images/products/auth/auth-3.png",
     technologies: [
       "TypeScript",
@@ -176,3 +202,6 @@ export const getProjectsByTechnology = (tech: string) =>
       t.toLowerCase().includes(tech.toLowerCase())
     )
   );
+
+export const getProjectBySlug = (slug: string) =>
+  projects.find((project) => project.slug === slug);

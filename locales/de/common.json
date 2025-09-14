@@ -25,40 +25,52 @@
     "featured": "Hervorgehoben",
     "viewMore": "Weitere Projekte Anzeigen",
     "sendyb": {
-      "description": "Eine Web-App + Browser-Erweiterung mit einem virtuellen Warenkorb-System, in dem Sie alle Ihre Artikel von verschiedenen Websites gruppieren können. Zum Beispiel beim Bau eines PCs mit Komponenten von Amazon, TopAchat, Leboncoin usw. können Sie alles auf derselben Seite zusammenfassen und Ihren Warenkorb mit allen teilen. Verfolgen Sie, wie viele Personen Ihren Warenkorb angesehen haben, und erstellen Sie private Warenkörbe, die per Einladung geteilt werden können. Perfekt für YouTuber, die Produkte präsentieren und ihre Warenkörbe verfolgen möchten."
+      "description": "Eine Web-App + Browser-Erweiterung mit einem virtuellen Warenkorb-System, in dem Sie alle Ihre Artikel von verschiedenen Websites gruppieren können. Zum Beispiel beim Bau eines PCs mit Komponenten von Amazon, TopAchat, Leboncoin usw. können Sie alles auf derselben Seite zusammenfassen und Ihren Warenkorb mit allen teilen. Verfolgen Sie, wie viele Personen Ihren Warenkorb angesehen haben, und erstellen Sie private Warenkörbe, die per Einladung geteilt werden können. Perfekt für YouTuber, die Produkte präsentieren und ihre Warenkörbe verfolgen möchten.",
+      "adventure": "Sendyb entstand aus Frust über verstreute Einkaufslisten. Ich habe einen einheitlichen Warenkorb mit teilbaren Links und Einladungs-Privatsphäre entworfen. Die größte Herausforderung war die Synchronisierung zwischen Extension und Web-App bei sofortigem UX-Gefühl. Ich habe Telemetrie (Warenkorb-Ansichten) und Onboarding iteriert, um Abbrüche zu reduzieren."
     },
     "beatshub": {
-      "description": "Beatshub ist ein moderner Musik-Marktplatz und eine Community, wo Beatmaker und Künstler Beats, Samples und Vocal Packs teilen, verkaufen und daran zusammenarbeiten können. Entwickelt mit React und Next.js, bietet es Echtzeit-Features, sichere Stripe-Zahlungen und ein Creator-first-Erlebnis ohne Plattformgebühren während des Launches."
+      "description": "Beatshub ist ein moderner Musik-Marktplatz und eine Community, wo Beatmaker und Künstler Beats, Samples und Vocal Packs teilen, verkaufen und daran zusammenarbeiten können. Entwickelt mit React und Next.js, bietet es Echtzeit-Features, sichere Stripe-Zahlungen und ein Creator-first-Erlebnis ohne Plattformgebühren während des Launches.",
+      "adventure": "Ich habe gelernt, die Bedürfnisse von Creators und Käufern auszubalancieren. Ich implementierte sichere Stripe-Flows, Asset-Delivery und Moderationstools. Herausforderung: Performance und Medien-Handling (Waveforms, Previews) bei null Gebühren zum Launch."
     },
     "42-titles-explorer": {
-      "description": "Entdecken und lernen Sie, wie Sie Titel auf 42-Campus freischalten können. Entwickelt mit Next.js, Shadcn UI und Tailwind CSS."
+      "description": "Entdecken und lernen Sie, wie Sie Titel auf 42-Campus freischalten können. Entwickelt mit Next.js, Shadcn UI und Tailwind CSS.",
+      "adventure": "Ich habe verstreutes Community-Wissen in einen strukturierten, durchsuchbaren Katalog überführt. Fokus auf klare UX und Inhalte."
     },
     "frost-js": {
-      "description": "Frost.js ist eine minimalistische React-ähnliche Bibliothek, die zum Erlernen von Frontend-Grundlagen wie dem Virtual DOM und Rendering entwickelt wurde."
+      "description": "Frost.js ist eine minimalistische React-ähnliche Bibliothek, die zum Erlernen von Frontend-Grundlagen wie dem Virtual DOM und Rendering entwickelt wurde.",
+      "adventure": "Ich habe eine React-ähnliche Runtime von Grund auf gebaut, um Reconciliation und Rendering zu entmystifizieren."
     },
     "mastral": {
-      "description": "Eine fortschrittliche Social-Media-Plattform, entwickelt mit TypeScript, React, Prisma und Next.js mit moderner UI/UX und Echtzeit-Interaktionen."
+      "description": "Eine fortschrittliche Social-Media-Plattform, entwickelt mit TypeScript, React, Prisma und Next.js mit moderner UI/UX und Echtzeit-Interaktionen.",
+      "adventure": "Spielwiese für Echtzeitfunktionen: optimistische UI, Benachrichtigungen und skalierbares Prisma-Schema."
     },
     "techvox": {
-      "description": "Eine technologieorientierte Plattform, entwickelt mit TypeScript, React und Next.js zum Teilen und Diskutieren der neuesten Tech-Trends."
+      "description": "Eine technologieorientierte Plattform, entwickelt mit TypeScript, React und Next.js zum Teilen und Diskutieren der neuesten Tech-Trends.",
+      "adventure": "Content-first App: DX, MDX-Authoring und SSR-Caching standen im Mittelpunkt."
     },
     "42-minishell": {
-      "description": "Ein Shell-Programm, das grundlegende Funktionen einer echten Shell nachahmt und Befehle, Pipes und Signale verarbeitet. Teamprojekt, das mir Zusammenarbeit, Entscheidungsfindung und Git-Workflows beigebracht hat."
+      "description": "Ein Shell-Programm, das grundlegende Funktionen einer echten Shell nachahmt und Befehle, Pipes und Signale verarbeitet. Teamprojekt, das mir Zusammenarbeit, Entscheidungsfindung und Git-Workflows beigebracht hat.",
+      "adventure": "Crashkurs in C/Unix: Parsen, Signale, Prozesskontrolle. Strenges Debugging und Teamarbeit."
     },
     "42-cub3d": {
-      "description": "Ein 3D-Spiel inspiriert von Wolfenstein 3D mit einer Raycasting-Engine zum Rendern einer 2D-Karte in 3D-Perspektive. Teamprojekt, das meine Teamwork- und Git-Kollaborationsfähigkeiten verbessert hat."
+      "description": "Ein 3D-Spiel inspiriert von Wolfenstein 3D mit einer Raycasting-Engine zum Rendern einer 2D-Karte in 3D-Perspektive. Teamprojekt, das meine Teamwork- und Git-Kollaborationsfähigkeiten verbessert hat.",
+      "adventure": "Ich implementierte Kernteile des Raycastings und lernte Performance-Profiling. Fiesester Bug: Gleitkommafehler, die bei bestimmten Winkeln Zittern verursachten."
     },
     "ecom-elysia-api": {
-      "description": "Eine RESTful API, entwickelt mit Elysia.js zur Verwaltung von E-Commerce-Services, einschließlich Warenkorb-Management, Produkterstellung und Bestellungsverarbeitung."
+      "description": "Eine RESTful API, entwickelt mit Elysia.js zur Verwaltung von E-Commerce-Services, einschließlich Warenkorb-Management, Produkterstellung und Bestellungsverarbeitung.",
+      "adventure": "Ich habe Bun/Elysia-Performance erkundet, Contract-Tests geschrieben und vorhersehbares Fehlermanagement gestaltet."
     },
     "42-fast-api": {
-      "description": "Ein einfacher TypeScript-Client für die Interaktion mit der 42-API, der OAuth2-Token-Management und API-Anfragen mühelos verwaltet."
+      "description": "Ein einfacher TypeScript-Client für die Interaktion mit der 42-API, der OAuth2-Token-Management und API-Anfragen mühelos verwaltet.",
+      "adventure": "Robuster Token-Refresh und typisierter Client, um die Nutzung für Studierende zu erleichtern."
     },
     "deezer-extractor": {
-      "description": "Deezer-Quellenanbieter für Discord Player - eine TypeScript-Bibliothek für Musik-Streaming-Integration."
+      "description": "Deezer-Quellenanbieter für Discord Player - eine TypeScript-Bibliothek für Musik-Streaming-Integration.",
+      "adventure": "Reverse Engineering von Endpunkten und Umgang mit Rate Limits führten zu robusten Retries und Caching für Medien-Metadaten."
     },
     "auth-example": {
-      "description": "Eine Authentifizierungs-Beispielanwendung mit Node.js, Express und MongoDB mit Benutzerverwaltung, Anmeldung und rollenbasierter Zugriffskontrolle."
+      "description": "Eine Authentifizierungs-Beispielanwendung mit Node.js, Express und MongoDB mit Benutzerverwaltung, Anmeldung und rollenbasierter Zugriffskontrolle.",
+      "adventure": "Fokus auf Sicherheitsgrundlagen: Passwort-Hashing, JWT Ablauf/Refresh und Unit-Tests."
     }
   },
   "contact": {
@@ -87,15 +99,29 @@
   "hero": {
     "name": "Mathis Zeghouani",
     "description1": "Full-Stack-Entwickler spezialisiert auf React, Next.js, TypeScript und Go.",
-    "description2": "18 Jahre alt aus Frankreich, programmiere seit 2021. Student an der 42. Ich liebe es, moderne Webanwendungen zu erstellen.",
-    "description3": "Derzeit offen für neue Möglichkeiten!",
+    "description2": "19 Jahre alt aus Frankreich, programmiere seit 2021. Student an der 42. Ich liebe es, moderne Webanwendungen zu erstellen.",
     "contact": "Kontaktieren Sie mich unter",
     "socialChannels": "oder über meine sozialen Kanäle.",
     "greeting": "Hallo, ich bin",
     "role": "Full-Stack-Entwickler",
     "contactButton": "Kontaktiere mich",
     "description": "Ich bin ein 18-jähriger Entwickler aus Frankreich, der gerne moderne Webanwendungen mit modernsten Technologien erstellt.",
-    "techStack": "Tech Stack"
+    "techStack": "Tech Stack",
+    "experience": {
+      "title": "Erfahrung",
+      "askeal": {
+        "company": "Askeal",
+        "position": "Full Stack Entwickler Praktikant",
+        "duration": "September 2025 - Jetzt",
+        "description": "Entwicklung fortgeschrittener KI-gestützter Cybersicherheitslösungen mit TypeScript, NestJS, MongoDB und MCP-Protokollen. Direkte Zusammenarbeit mit dem CTO bei KI-Architektur und intelligenter Produktentwicklung."
+      },
+      "school42": {
+        "company": "42",
+        "position": "Student",
+        "duration": "November 2024 - August 2025",
+        "description": "Intensives Entwicklungsprogramm mit Fokus auf C, Algorithmen und kollaborative Projekte."
+      }
+    }
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

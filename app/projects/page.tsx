@@ -101,6 +101,12 @@ export default function ProjectsPage() {
 
                 <div className="flex gap-2 mt-auto">
                   <Link
+                    href={`/projects/${project.slug}`}
+                    className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
+                  >
+                    {t("projects.viewProject")}
+                  </Link>
+                  <Link
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"

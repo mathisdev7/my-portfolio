@@ -41,7 +41,6 @@ export default function HeroSection() {
       <div className="text-secondary">
         <p className="mt-4">{highlightTechnologies(t("hero.description1"))}</p>
         <p className="mt-4 mb-4">{t("hero.description2")}</p>
-        <p className="mb-4">{t("hero.description3")}</p>
         <p className="mb-4">
           {t("hero.contact")}{" "}
           <Link
@@ -75,7 +74,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             aria-label="X"
           >
-            <IconBrandX className="text-primary" />
+            <IconBrandX className="text-primary group-hover:text-foreground transition-colors" />
           </Link>
         </div>
         <div className="text-primary hover:text-foreground transition-colors flex filter brightness-125">

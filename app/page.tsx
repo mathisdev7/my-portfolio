@@ -1,3 +1,4 @@
+import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import { Metadata } from "next";
@@ -5,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Home - Full Stack Developer Portfolio",
   description:
-    "Welcome to Mathis Zeghouani's portfolio. 18-year-old Full Stack Developer from France specializing in React, Next.js, TypeScript, Node.js, and Go. Discover my latest projects and get in touch for collaborations.",
+    "Welcome to Mathis Zeghouani's portfolio. 19-year-old Full Stack Developer from France specializing in React, Next.js, TypeScript, Node.js, and Go. Discover my latest projects and get in touch for collaborations.",
   keywords: [
     "Mathis Zeghouani",
     "Full Stack Developer France",
@@ -21,14 +22,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mathis Zeghouani - Full Stack Developer Portfolio",
     description:
-      "18-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go. Discover my projects and expertise.",
+      "19-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go. Discover my projects and expertise.",
     url: "https://mathisdev.pro",
     type: "website",
   },
   twitter: {
     title: "Mathis Zeghouani - Full Stack Developer Portfolio",
     description:
-      "18-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go.",
+      "19-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go.",
   },
   alternates: {
     canonical: "https://mathisdev.pro",
@@ -42,7 +43,7 @@ function JsonLd() {
     name: "Mathis Zeghouani",
     jobTitle: "Full Stack Developer",
     description:
-      "18-year-old Full Stack Developer from France specializing in React, Next.js, TypeScript, Node.js, and Go",
+      "19-year-old Full Stack Developer from France specializing in React, Next.js, TypeScript, Node.js, and Go",
     url: "https://mathisdev.pro",
     sameAs: [
       "https://github.com/mathisdev7",
@@ -94,6 +95,8 @@ export default function Home() {
       <div className="mx-auto max-w-4xl antialiased">
         <div className="mx-4 px-2 md:px-0 lg:mx-auto py-5">
           <HeroSection />
+          <div className="my-8 w-full border-t border-border"></div>
+          <ExperienceSection />
           <div className="my-8 w-full border-t border-border"></div>
           <ProjectsSection />
         </div>
