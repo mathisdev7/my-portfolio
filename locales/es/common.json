@@ -7,7 +7,7 @@
   },
   "home": {
     "title": "Bienvenido a Mi Portfolio",
-    "subtitle": "Desarrollador Full Stack",
+    "subtitle": "Ingeniero de Software",
     "description": "Creo aplicaciones web modernas con tecnologías de vanguardia."
   },
   "about": {
@@ -98,13 +98,13 @@
   },
   "hero": {
     "name": "Mathis Zeghouani",
-    "description1": "Desarrollador full-stack especializado en React, Next.js, TypeScript y Go.",
+    "description1": "Ingeniero de software especializado en React, Next.js, TypeScript y Go.",
     "description2": "19 años de Francia, programando desde 2021. Estudiante en 42. Me encanta crear aplicaciones web modernas.",
     "description3": "",
     "contact": "Contáctame en",
     "socialChannels": "o a través de mis redes sociales.",
     "greeting": "Hola, soy",
-    "role": "Desarrollador Full-Stack",
+    "role": "Ingeniero de Software",
     "description": "Soy un desarrollador de 19 años de Francia que ama crear aplicaciones web modernas con tecnologías de vanguardia.",
     "contactButton": "Contáctame",
     "techStack": "Stack Tecnológico",
@@ -112,7 +112,7 @@
       "title": "Experiencia",
       "askeal": {
         "company": "Askeal",
-        "position": "Practicante Desarrollador Full Stack",
+        "position": "Practicante Ingeniero de Software",
         "duration": "Septiembre 2025 - Ahora",
         "description": "Desarrollo de soluciones avanzadas de ciberseguridad impulsadas por IA usando TypeScript, NestJS, MongoDB y protocolos MCP. Colaboración directa con el CTO en arquitectura de IA y desarrollo de productos inteligentes."
       },
