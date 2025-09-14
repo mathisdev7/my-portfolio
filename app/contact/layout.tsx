@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Contact - Mathis Zeghouani",
     description:
       "Get in touch for web development projects, collaborations, or job opportunities. Expert in React, Next.js, TypeScript, and modern web technologies.",
-    url: "https://mathisdev.pro/contact",
+    url: "https://sitham.dev/contact",
     type: "website",
   },
   twitter: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Get in touch for web development projects, collaborations, or job opportunities. Expert in React, Next.js, TypeScript, and modern web technologies.",
   },
   alternates: {
-    canonical: "https://mathisdev.pro/contact",
+    canonical: "https://sitham.dev/contact",
   },
 };
 

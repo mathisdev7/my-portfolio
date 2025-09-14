@@ -10,7 +10,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mathisdev.pro"),
+  metadataBase: new URL("https://sitham.dev"),
   title: {
     default:
       "Mathis Zeghouani - Full Stack Developer | React, Next.js, TypeScript Expert",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mathisdev.pro",
+    url: "https://sitham.dev",
     siteName: "Mathis Zeghouani - Full Stack Developer",
     title:
       "Mathis Zeghouani - Full Stack Developer | React, Next.js, TypeScript Expert",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     creator: "@mathiszeghouani",
   },
   alternates: {
-    canonical: "https://mathisdev.pro",
+    canonical: "https://sitham.dev",
   },
   category: "Technology",
   classification: "Portfolio Website",

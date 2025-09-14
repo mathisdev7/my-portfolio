@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Projects - Mathis Zeghouani Portfolio",
     description:
       "Discover innovative web applications and projects built with React, Next.js, TypeScript, and modern technologies.",
-    url: "https://mathisdev.pro/projects",
+    url: "https://sitham.dev/projects",
     type: "website",
   },
   twitter: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Discover innovative web applications and projects built with React, Next.js, TypeScript, and modern technologies.",
   },
   alternates: {
-    canonical: "https://mathisdev.pro/projects",
+    canonical: "https://sitham.dev/projects",
   },
 };
 

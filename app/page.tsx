@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Mathis Zeghouani - Full Stack Developer Portfolio",
     description:
       "19-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go. Discover my projects and expertise.",
-    url: "https://mathisdev.pro",
+    url: "https://sitham.dev",
     type: "website",
   },
   twitter: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "19-year-old Full Stack Developer from France. Expert in React, Next.js, TypeScript, Node.js, and Go.",
   },
   alternates: {
-    canonical: "https://mathisdev.pro",
+    canonical: "https://sitham.dev",
   },
 };
 
@@ -44,7 +44,7 @@ function JsonLd() {
     jobTitle: "Full Stack Developer",
     description:
       "19-year-old Full Stack Developer from France specializing in React, Next.js, TypeScript, Node.js, and Go",
-    url: "https://mathisdev.pro",
+    url: "https://sitham.dev",
     sameAs: [
       "https://github.com/mathisdev7",
       "https://linkedin.com/in/mathis-zeghouani",

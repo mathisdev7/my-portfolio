@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const project = getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
   const t = await getTranslations();
 
   if (!project) return {};
@@ -33,10 +34,10 @@ export async function generateMetadata({
       title,
       description,
       images: project.image ? [{ url: project.image }] : undefined,
-      url: `https://mathisdev.pro/projects/${project.slug}`,
+      url: `https://sitham.dev/projects/${project.slug}`,
       type: "article",
     },
-    alternates: { canonical: `https://mathisdev.pro/projects/${project.slug}` },
+    alternates: { canonical: `https://sitham.dev/projects/${project.slug}` },
     twitter: {
       title,
       description,
@@ -46,7 +47,8 @@ export async function generateMetadata({
 }
 
 export default async function ProjectPage({ params }: PageProps) {
-  const project = getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
   const t = await getTranslations();
 
   if (!project) {

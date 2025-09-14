@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/", "/_next/", "/private/"],
       },
     ],
-    sitemap: "https://mathisdev.pro/sitemap.xml",
-    host: "https://mathisdev.pro",
+    sitemap: "https://sitham.dev/sitemap.xml",
+    host: "https://sitham.dev",
   };
 }
