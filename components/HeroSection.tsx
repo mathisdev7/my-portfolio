@@ -17,7 +17,7 @@ export default function HeroSection() {
       ) {
         return (
           <Badge key={index} className="text-sm" variant="outline">
-            <span className="text-primary filter brightness-125 font-bold">
+            <span className="text-primary underline filter brightness-125 font-bold">
               {part}
             </span>
           </Badge>

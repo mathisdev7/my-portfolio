@@ -82,15 +82,6 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
         )}
 
-        <section className="prose prose-invert max-w-none mb-8">
-          <h2 className="text-xl font-semibold mb-2">
-            {t("projects.viewProject")}
-          </h2>
-          <p className="text-secondary leading-relaxed">
-            {t(project.adventure)}
-          </p>
-        </section>
-
         <section className="mb-6">
           <h3 className="text-lg font-semibold mb-3">Tech</h3>
           <div className="flex flex-wrap gap-2">
